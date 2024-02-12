@@ -6,8 +6,8 @@
 */
 @import "../css/bootstrap.min.css";
 @import "../style.css";
-@import url("https://fonts.cdnfonts.com/css/conthrax");
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
 
 * {
   margin: 0;
@@ -44,7 +44,7 @@ p {
 
 a,
 button {
-  font-family: "Conthrax", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   text-decoration: none;
   color: unset;
@@ -76,7 +76,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Conthrax", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
@@ -622,6 +622,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     rgba(6, 19, 45, 0) 100%
   );
   opacity: 0.5;
+  z-index: -2;
 }
 
 .shape.right {
@@ -830,7 +831,7 @@ a {
   background: #070a29;
   top: -100%;
   transition: all 0.4s ease-in-out;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3); */
   z-index: 9999;
   opacity: 0;
   left: 0;
@@ -843,6 +844,7 @@ a {
   opacity: 1;
   visibility: visible;
   height: 80px;
+  background: #000 !important;
 }
 
 .header.is-fixed.is-small {
@@ -952,6 +954,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   margin-right: 35px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -974,8 +977,7 @@ a {
   position: relative;
   display: block;
   font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -0.6px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1188,7 +1190,7 @@ a {
 }
 
 .header #main-nav-mobi ul li.current-item > a {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .header .menu-current-item > a,
@@ -1434,7 +1436,7 @@ a {
   position: relative;
   background: url("../../assets/images/background/bg-banner.png") no-repeat;
   background-size: cover;
-  height: 107vh;
+  height: 103vh;
 }
 
 .banner .block-text .heading {
@@ -1476,6 +1478,7 @@ a {
 
 .banner .banner__left {
   padding: 100px 0;
+  padding-top: 15vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1965,7 +1968,7 @@ a {
 }
 
 .banner-box .main .coundown .countdown__item {
-  font-family: "Conthrax";
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 26px;
   color: #ffffff;
@@ -2935,6 +2938,7 @@ img.mfp-img {
 .about {
   padding: 0 0 100px;
   position: relative;
+  padding-bottom: 200px;
 }
 
 .about .block-text {
@@ -2974,7 +2978,7 @@ img.mfp-img {
   height: 117px;
   object-fit: cover;
   top: 230px;
-  left: -183px;
+  left: -133px;
   animation: animate-2 15s linear 0s infinite;
 }
 
@@ -2982,8 +2986,8 @@ img.mfp-img {
   width: 222px;
   height: 222px;
   object-fit: cover;
-  bottom: -93px;
-  left: -108px;
+  bottom: -150px;
+  left: -125px;
   animation: animate-3 15s linear 0s infinite;
 }
 
@@ -3336,7 +3340,7 @@ img.mfp-img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 600;
   font-size: 12px;
-  font-family: "Conthrax";
+  font-family: "Montserrat";
 }
 
 .portfolio-box .icon {
@@ -3916,7 +3920,7 @@ img.mfp-img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 600;
   font-size: 12px;
-  font-family: "Conthrax";
+  font-family: "Montserrat";
 }
 
 .roadmap-box .title {
@@ -5334,7 +5338,7 @@ section.touch {
 }
 
 .bloglist__main .sidebar .widget-sidebar.recent ul li .content .title {
-  font-family: "Conthrax";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -6545,12 +6549,52 @@ section.banner.s3.s2 .container .swiper-button-prev {
 
 .banner-video {
   position: absolute;
-  height: 100%;
-  top: -13%;
+  height: 105%;
+  top: -15%;
   right: 0%;
   z-index: -1;
 }
 
 .banner-container {
   padding: 0px 50px;
+}
+
+#header_main {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+68,000000+100&1+0,0.47+68,0+100;Neutral+Density */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.47) 68%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 105%;
+  top: -15%;
+  left: 0%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+29&0.88+0,0+29 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0) 29%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index: 0;
+}
+
+.banner-container {
+  position: relative;
+  z-index: 999;
+}
+
+.menu-container {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.portfolio__right_img {
+  width: 100%;
 }

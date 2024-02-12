@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Roadmap1() {
     return (
         <>
-            <section className="roadmap">
+            <section className="roadmap" id="roadmap-section">
                 <img src="/assets/images/background/line.png" alt="" className="img-line" />
                 <div className="shape" />
                 <div className="container">

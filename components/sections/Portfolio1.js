@@ -14,7 +14,7 @@ export default function Portfolio1() {
                                     is unprecedented</h3>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-md-6">
+                        <div className="col-md-5">
                             <div className="portfolio__left">
                                 <div className="portfolio-box">
                                     <div className="step">Step 1</div>
@@ -135,10 +135,10 @@ export default function Portfolio1() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-md-6">
+                        <div className="col-md-7">
                             <div className="portfolio__right">
                                 <div className="image" data-aos="fade-left" data-aos-duration={2000}>
-                                    <img src="/assets/images/layouts/portfolio.png" alt="" />
+                                    <img className="portfolio__right_img" src="/assets/images/layouts/adl-full.JPG" alt="" />
                                 </div>
                             </div>
                         </div>

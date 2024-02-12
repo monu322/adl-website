@@ -3,17 +3,17 @@
 export default function Speciality1() {
     return (
         <>
-            <section className="speciality">
+            <section className="speciality" id="features-section">
                 <div className="shape right" />
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="block-text center">
-                                <h6 className="sub-heading"><span>Our Features</span></h6>
-                                <h3 className="heading wow">Unique solutions for <br />
+                                <h6 className="sub-heading"><span>The Features</span></h6>
+                                <h3 className="heading wow">Radical solutions for <br />
                                     for a better future</h3>
-                                <p >At ADL Robotics we are driven by challenges and believe that the simplest solutions are the most elegant. We derive inspiration from
-                                    the human body and mind to build the Robot of the future.
+                                <p >At ADL Robotics we are driven by challenges and believe that the simplest solutions are the most elegant. 
+                                    We derive inspiration from the most ingenious design out there, the human body.
                                 </p>
                         </div>
                     </div>

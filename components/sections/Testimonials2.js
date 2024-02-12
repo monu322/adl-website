@@ -4,7 +4,7 @@ import TestimonialSlider2 from "../slider/TestimonialSlider2"
 export default function Testimonials2() {
     return (
         <>
-            <section className="testimonials s2">
+            <section className="testimonials s2" id="team-section">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

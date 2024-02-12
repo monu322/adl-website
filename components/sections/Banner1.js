@@ -2,17 +2,39 @@ import Link from "next/link"
 
 
 export default function Banner1() {
+
+    // let's make a function that receive the specific element_id as string and scroll into that element_id
+  const scrolltoHash = function (element_id) {
+    
+    const element = document.getElementById(element_id)
+    console.log(element)
+    console.log(element.offsetTop)
+
+    const scrollTop = element.offsetTop
+    
+    if(window)
+    {
+        window.scrollTo({
+            top: scrollTop-150,
+            behavior: 'smooth',
+        })
+    }
+
+    return false;
+
+  }
+
     return (
         <>
             <section className="banner">
 
-                <video className="banner-video" autoPlay playsInline loop muted>
+                <video poster="/assets/images/background/banner-video-bg.png" className="banner-video" autoPlay playsInline loop muted>
                     <source src="https://www.neurosphere.tech/assets/video/pan_video.mp4" type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>
 
                 {/* <div className="shape right" /> */}
-                <div className="container big banner-container">
+                <div className="container big banner-container banner-container">
                     <div className="row">
                         <div className="col-xl-6 col-md-12">
                             <div className="banner__left">
@@ -21,18 +43,15 @@ export default function Banner1() {
                                         Robot <span className="s1 arlo_tm_animation_text_word" />
                                         Butler</h2>
                                     <p className="desc">ADL Robotics aims to build the world's first personal robot for the domestic space. Yes, your own personal robot butler!</p>
-                                    <Link href="/contact" className="action-btn"><span>Learn More</span></Link>
+                                    <a onClick={(e) => scrolltoHash('about-section')} className="action-btn"><span>Learn More</span></a>
                                 </div>
                                 <div className="pay">
                                     <h6>We are supported by</h6>
                                     <div className="list">
                                         <ul>
-                                            <li><Link href="#"><span className="icon-logo-01" /></Link></li>
-                                            <li><Link href="#"><span className="icon-logo-02" /></Link></li>
-                                            <li><Link href="#"><span className="icon-logo-03" /></Link></li>
-                                            <li><Link href="#"><span className="icon-logo-04" /></Link></li>
-                                            <li><Link href="#"><span className="icon-logo-05"><span className="path1" /><span className="path2" /><span className="path3" /><span className="path4" /></span></Link></li>
-                                            <li><Link href="#"><span className="icon-logo-06" /></Link></li>
+                                            <li>
+                                                <img src="/assets/images/logo/dassault-logo-white.svg" alt="dassault systems logo" width={160} height={38} data-width={260} data-height={60} />
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
