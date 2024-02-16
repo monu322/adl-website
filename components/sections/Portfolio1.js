@@ -33,7 +33,7 @@ export default function Portfolio1() {
                                     </div>
                                     <div className="content">
                                         <h5 className="title">Fully autonomous</h5>
-                                        <p>Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                        <p>The robot operates independently, making decisions and executing tasks without human intervention. It navigates its environment, identifies objects, and performs actions with precision, enhancing efficiency and adaptability in various scenarios.</p>
                                     </div>
                                 </div>
                                 <div className="portfolio-box">
@@ -56,7 +56,7 @@ export default function Portfolio1() {
                                     </div>
                                     <div className="content">
                                         <h5 className="title">Highly dextrous</h5>
-                                        <p>Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                        <p> With intricate manipulative abilities, the robot exhibits remarkable dexterity in handling objects of varying shapes, sizes, and textures. Its agile fingers and adaptable grip enable delicate tasks and intricate maneuvers, facilitating versatile functionality in diverse environments.</p>
                                     </div>
                                 </div>
                                 <div className="portfolio-box">
@@ -94,7 +94,7 @@ export default function Portfolio1() {
                                     </div>
                                     <div className="content">
                                         <h5 className="title">Highly Intelligent</h5>
-                                        <p>Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                        <p>Endowed with advanced cognitive capabilities, the robot demonstrates high-level intelligence in problem-solving, decision-making, and learning. It assimilates information from its surroundings, adapts to dynamic conditions, and continuously improves performance through experience, ensuring optimal efficiency and effectiveness.</p>
                                     </div>
                                 </div>
                                 <div className="portfolio-box">
@@ -129,8 +129,8 @@ export default function Portfolio1() {
                                         </svg>
                                     </div>
                                     <div className="content">
-                                        <h5 className="title">Download skills</h5>
-                                        <p>Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                                        <h5 className="title">Downloadable skills</h5>
+                                        <p>Equipped with the capability to expand its repertoire of capabilities, the robot can download new skills and functionalities as needed. This feature enables seamless integration of additional tasks, upgrades, or specialized functions, enhancing its versatility and utility in evolving contexts.</p>
                                     </div>
                                 </div>
                             </div>

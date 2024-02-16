@@ -20,7 +20,7 @@ export default function Footer1() {
                                 </form>
                             </div>
                             <div className="footer__bottom">
-                                <a href="/" className="logo"><img src="/assets/images/logo/logo.png" alt="" /></a>
+                                <a href="/" className="logo"><img width={250} src="/assets/images/logo/adl-logo.svg" alt="" /></a>
                                 <div className="center mb--30">
                                     <ul className="list">
                                         <li><a href="/">Home</a></li>
@@ -31,7 +31,7 @@ export default function Footer1() {
                                         <li><a href="/careers">Careers</a></li>
                                         <li><a href="/contact">Contact</a></li>
                                     </ul>
-                                    <p>Copyright © {new Date().getFullYear()}, Cyfonii. Designed by Themesflat</p>
+                                    <p>Copyright © {new Date().getFullYear()}, ADL Robotics.</p>
                                 </div>
                                 {/* <ul className="list-social">
                                     <li><a href="#">

@@ -42,7 +42,7 @@ export default function Banner1() {
                                     <h2 className="heading">World's First<br />
                                         Robot <span className="s1 arlo_tm_animation_text_word" />
                                         Butler</h2>
-                                    <p className="desc">ADL Robotics aims to build the world's first personal robot for the domestic space. Yes, your own personal robot butler!</p>
+                                    <p className="desc">ADL Robotics aims to build the world's first general purpose personal robot for the domestic space. Yes, your own personal robot butler!</p>
                                     <a onClick={(e) => scrolltoHash('about-section')} className="action-btn"><span>Learn More</span></a>
                                 </div>
                                 <div className="pay">

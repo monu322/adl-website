@@ -2075,6 +2075,7 @@ a {
   font-weight: 300;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.2);
+  text-align: right;
 }
 
 .footer .footer__bottom .list {
@@ -2938,7 +2939,7 @@ img.mfp-img {
 .about {
   padding: 0 0 100px;
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 130px;
 }
 
 .about .block-text {
@@ -3198,7 +3199,7 @@ img.mfp-img {
 }
 
 .speciality {
-  padding: 100px 0 75px;
+  padding: 100px 0 160px;
   position: relative;
 }
 
@@ -3208,6 +3209,7 @@ img.mfp-img {
 
 .speciality .block-text p {
   padding: 0 300px;
+  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -3282,6 +3284,7 @@ img.mfp-img {
 
 .portfolio {
   position: relative;
+  padding-bottom: 150px;
 }
 
 .portfolio .container {
@@ -4186,13 +4189,13 @@ img.mfp-img {
 }
 
 .testimonials.s2 .testimonials__main {
-  padding: 78px 15px;
+  padding: 78px 15px 170px;
   border: none;
 }
 
 @media only screen and (max-width: 767px) {
   .testimonials.s2 .testimonials__main {
-    padding: 50px 15px;
+    padding: 50px 15px 150px;
   }
 }
 
@@ -4267,11 +4270,12 @@ img.mfp-img {
   );
   padding: 40px 20px 0;
   border-radius: 20px;
+  width: 100%;
 }
 
 .testimonials-swiper.s2 .box-testimonial .image {
-  width: 116px;
-  height: 116px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.37);
   padding: 5px;
@@ -4298,7 +4302,7 @@ img.mfp-img {
 
 .testimonials-swiper.s2 .box-testimonial .text {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .faq {
@@ -6597,4 +6601,34 @@ section.banner.s3.s2 .container .swiper-button-prev {
 
 .portfolio__right_img {
   width: 100%;
+}
+
+.testimonials-swiper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials-swiper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .box-testimonial {
+    margin-bottom: 150px;
+  }
+
+  .box-testimonial3 {
+    margin: auto;
+  }
+}
+
+.roadmap-desc-p {
+  max-width: 500px;
+  margin: auto;
 }

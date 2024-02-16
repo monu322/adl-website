@@ -31,7 +31,7 @@ export default function Speciality1() {
                                 </svg>
                             </div>
                             <h5 className="title">Semi-Humaoid Design</h5>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
+                            <p>In our pursuit of creating a truly dexterous mobile robot, we have embraced a design philosophy that closely mirrors the intricate structure of the human body. Within our ADL Robot, you'll find meticulously crafted components, including a humanoid torso, shoulders, arms, and fingers.</p>
                             <h3 className="number">01</h3>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default function Speciality1() {
                                 </svg>
                             </div>
                             <h5 className="title">Precision Actuation</h5>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
+                            <p>To emulate human functionality, our robots must move with human-like precision and agility. That's why we've meticulously designed high-precision actuation systems into our robotic components, enabling us to attain unparalleled levels of dexterity and fluidity in motion.</p>
                             <h3 className="number">02</h3>
                         </div>
                     </div>
@@ -67,7 +67,8 @@ export default function Speciality1() {
                                 </svg>
                             </div>
                             <h5 className="title">AI Vision & Perception</h5>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
+                            <p>What makes our robot possible to act like human is it's ability to see like a human, with it advanced AI powered vision software. 
+                                Powered by neural networks and advanced software algorithms, it allows our robot to perceive it's surroundings accurately, identify objects, their dimensions and orientation.</p>
                             <h3 className="number">03</h3>
                         </div>
                     </div>
@@ -85,7 +86,7 @@ export default function Speciality1() {
                                 </svg>
                             </div>
                             <h5 className="title">Step Generation and training</h5>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
+                            <p>The performance of a machine is only as good as the instructions you feed it. The ADL Robot is powered by an ingenious step generation algorithm that takes in an objective and breaks it down to thousands of individual instructions. These instructions, carried out in succession is how the ADL Robot achieves the objective.</p>
                             <h3 className="number">04</h3>
                         </div>
                     </div>
@@ -103,7 +104,7 @@ export default function Speciality1() {
                                 </svg>
                             </div>
                             <h5 className="title">Action feedback verification</h5>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
+                            <p>What makes us humans, perfectly capable of intricate dexterity is our feedback senses. Tactile and optical. That's exactly what powers the feedback system of the ADL Robot. Equiped with tactile sensors and advanced AI-powered vision feedback systems, our ADL Robot confirms each step along the way.</p>
                             <h3 className="number">05</h3>
                         </div>
                     </div>
@@ -121,7 +122,7 @@ export default function Speciality1() {
                                 </svg>
                             </div>
                             <h5 className="title">Robot Operating System</h5>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
+                            <p>The industry-standard Robot Operating System (ROS) serves as the backbone for our ADL Robot software, unifying the various software systems such as step generation, vision, perception, kinematics, actuation, and feedback into a cohesive framework.</p>
                             <h3 className="number">06</h3>
                         </div>
                     </div>

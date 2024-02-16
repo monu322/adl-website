@@ -28,47 +28,47 @@ const swiperOptions = {
 export default function TestimonialSlider2() {
     return (
         <>
-            <Swiper {...swiperOptions} className="swiper testimonials-swiper s2">
-                <SwiperSlide>
+            <div className="swiper testimonials-swiper s2">
+                
                     <div className="box-testimonial center">
                         <div className="image">
                             <img src="/assets/images/team/john.png" alt="" />
                         </div>
                         <div className="info">
                             <h5 className="name">Monu John</h5>
-                            <p>Founder &amp; CEO</p>
+                            <p>Founder</p>
                            
                         </div>
-                        <p className="text">John comes with a decade of experience in Tech, a Bachelors in Mechanical Engineering and a Masters in Artificial Intelligence and Robotics, all poised to make the ADL dream a reality.</p>
+                        <p className="text">John brings forth a wealth of experience spanning over a decade in the field of technology. Armed with a Bachelor's degree in Mechanical Engineering and further enriched by a Master's in Artificial Intelligence and Robotics, he stands determined to make the ADL dream a reality, transforming the future of daily living.</p>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
+                
+                
                     <div className="box-testimonial center">
                         <div className="image">
                             <img src="/assets/images/layouts/avt-09.png" alt="" />
                         </div>
                         <div className="info">
                             <h5 className="name">Niju Thomas</h5>
-                            <p>Head of Engineering</p>
+                            <p>Engineering</p>
                             
                         </div>
-                        <p className="text">Niju is a veteran in Mechanical Engineering and Development, with over 20 years of experience and several successfull projects with Indian Space Research Organisation(ISRO). </p>
+                        <p className="text">Niju stands as a seasoned veteran at ADL Robotics, solving complex challenges in the domains of Mechanical Engineering and Development. During his impressive tenure of over two decades, Niju has worked on simple consumer products to advanced space robots for Indian Space Research Organisation (ISRO). </p>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="box-testimonial center">
+                
+                
+                    <div className="box-testimonial box-testimonial3 center">
                         <div className="image">
-                            <img src="/assets/images/layouts/avt-10.png" alt="" />
+                            <img src="/assets/images/team/sreejith.jpg" alt="" />
                         </div>
                         <div className="info">
                             <h5 className="name">Sreejith S</h5>
-                            <p>Head of Development</p>
+                            <p>Development</p>
                            
                         </div>
-                        <p className="text"></p>
+                        <p className="text">Srijith plays the pivotal role of the in-house expert on robotics development, bringing forth a wealth of expertise garnered over years as a Mechatronics Engineer and a Master's in Autonomous Robotics. Within the ADL project, Srijith's responsibilities encompass the design and development of the ADL Robot Prototype.</p>
                     </div>
-                </SwiperSlide>
-            </Swiper>
+                
+            </div>
         </>
     )
 }
