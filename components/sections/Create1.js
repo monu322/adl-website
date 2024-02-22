@@ -11,10 +11,11 @@ export default function Create1() {
                             <div className="create__main">
                                 <div className="content">
                                     <h4 className="heading">Join us in our journey</h4>
-                                    <p>We are always in the lookout for partners that share our ambition and bold enough<br/>to build the future.</p>
+                                    <p className="contact-para">We are always in the lookout for ambitious and passionate partners to work together and build 
+                                    the Robot of the future.</p>
                                     <Link href="/contact" className="action-btn"><span>Get in touch</span></Link>
                                 </div>
-                                <img src="/assets/images/layouts/create.png" alt="" />
+                                <img src="/assets/images/layouts/contact.png" alt="" />
                             </div>
                         </div>
                     </div>

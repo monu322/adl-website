@@ -886,6 +886,10 @@ a {
   .header .header__right .mobile-button {
     display: block;
   }
+
+  .header__right .action-btn {
+    right: 20px;
+  }
 }
 
 .header .header__right .mobile-button::before,
@@ -2142,6 +2146,10 @@ a {
   .footer .footer__bottom div .list li {
     margin: 0 10px;
   }
+
+  .footer .footer__bottom div p {
+    text-align: center;
+  }
 }
 
 .form {
@@ -3240,13 +3248,13 @@ img.mfp-img {
   );
   backdrop-filter: blur(4px);
   position: relative;
-  padding: 65px 20px 10px;
+  padding: 100px 20px 10px;
   border-radius: 15px;
 }
 
 .speciality-box .icon {
   background: linear-gradient(289.89deg, #dec7ff -23.71%, #5c27fe 96.09%);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(14px);
   width: 105px;
   height: 105px;
   min-width: 105px;
@@ -3259,6 +3267,10 @@ img.mfp-img {
   top: -18px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.speciality-box .icon img {
+  height: 210px;
 }
 
 .speciality-box .title {
@@ -4498,7 +4510,7 @@ img.mfp-img {
 .create__main img {
   position: absolute;
   right: 17px;
-  top: -112px;
+  top: -25px;
   animation: animate-1 15s linear 0s infinite;
 }
 
@@ -4824,7 +4836,7 @@ img.mfp-img {
   margin-left: -30px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .touch__main {
     flex-wrap: wrap;
   }
@@ -6626,9 +6638,44 @@ section.banner.s3.s2 .container .swiper-button-prev {
   .box-testimonial3 {
     margin: auto;
   }
+
+  .touch__main .info .image {
+    margin-left: -110px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-para {
+    padding-right: 390px;
+  }
 }
 
 .roadmap-desc-p {
   max-width: 500px;
   margin: auto;
+}
+
+.header__logo {
+  width: 260px;
+  height: 38px;
+  background: url("/assets/images/logo/adl-logo.svg");
+  background-size: 260px 38px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 525px) {
+  .header__logo {
+    background: url("/assets/images/logo/adl-logo-mobile.svg");
+    background-size: 150px 50px;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 150px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .touch__main .info .image {
+    margin-left: 0px;
+  }
 }

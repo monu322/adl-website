@@ -4,25 +4,25 @@ import MobileMenu from "../MobileMenu"
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big }) {
     
     // let's make a function that receive the specific element_id as string and scroll into that element_id
-  const scrolltoHash = function (element_id) {
-    
-    const element = document.getElementById(element_id)
-    console.log(element)
-    console.log(element.offsetTop)
+    const scrolltoHash = function (element_id) {
+        
+        const element = document.getElementById(element_id)
+        console.log(element)
+        console.log(element.offsetTop)
 
-    const scrollTop = element.offsetTop
-    
-    if(window)
-    {
-        window.scrollTo({
-            top: scrollTop-150,
-            behavior: 'smooth',
-        })
+        const scrollTop = element.offsetTop
+        
+        if(window)
+        {
+            window.scrollTo({
+                top: scrollTop-150,
+                behavior: 'smooth',
+            })
+        }
+
+        return false;
+
     }
-
-    return false;
-
-  }
     
     return (
         <>
@@ -31,11 +31,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big })
                     <div className="row">
                         <div className="col-12">
                             <div className="header__body">
-                                <div className="header__logo">
-                                    <Link href="/">
-                                        <img id="site-logo" src="/assets/images/logo/adl-logo.svg" alt="Peson" width={260} height={38} data-width={260} data-height={60} />
-                                    </Link>
-                                </div>
+                                <Link href="/">
+                                    <div className="header__logo"></div>
+                                </Link>
                                 <div className="header__right">
                                     <nav id="main-nav" className="main-nav">
                                         <ul id="menu-primary-menu" className="menu">

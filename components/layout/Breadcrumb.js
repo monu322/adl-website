@@ -12,7 +12,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                                 <div className="page-title__main">
                                     <h4 className="title">{breadcrumbTitle}</h4>
                                     <ul className="breacrumb">
-                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/">Home1</a></li>
                                         <li><p>{breadcrumbTitle}</p></li>
                                     </ul>
                                     <div className="bottom">

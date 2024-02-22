@@ -35,7 +35,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
 
 
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+                {/* {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />} */}
 
                 {children}
 

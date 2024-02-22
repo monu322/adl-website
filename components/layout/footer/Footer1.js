@@ -1,5 +1,26 @@
 
 export default function Footer1() {
+
+     // let's make a function that receive the specific element_id as string and scroll into that element_id
+     const scrolltoHash = function (element_id) {
+        
+        const element = document.getElementById(element_id)
+        console.log(element)
+        console.log(element.offsetTop)
+
+        const scrollTop = element.offsetTop
+        
+        if(window)
+        {
+            window.scrollTo({
+                top: scrollTop-150,
+                behavior: 'smooth',
+            })
+        }
+
+        return false;
+
+    }
     return (
         <>
             <footer className="footer">
@@ -24,11 +45,10 @@ export default function Footer1() {
                                 <div className="center mb--30">
                                     <ul className="list">
                                         <li><a href="/">Home</a></li>
-                                        <li><a href="/about">About</a></li>
-                                        <li><a href="/features">Features</a></li>
-                                        <li><a href="/roadmap">Roadmap</a></li>
-                                        <li><a href="/team">Team</a></li>
-                                        <li><a href="/careers">Careers</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('about-section')} href="/about">About</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('features-section')} href="/features">Features</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('roadmap-section')} href="/roadmap">Roadmap</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('team-section')} href="/team">Team</a></li>
                                         <li><a href="/contact">Contact</a></li>
                                     </ul>
                                     <p>Copyright © {new Date().getFullYear()}, ADL Robotics.</p>
