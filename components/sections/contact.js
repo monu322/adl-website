@@ -1,13 +1,12 @@
-import Accordion from "@/components/elements/Accordion"
-import Layout from "@/components/layout/Layout"
 export default function Contact() {
+
+     
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Contact">
-            <div className="page-contact">
-                    <section className="touch">
-                        <div className="container">
+            <section className="contact" id="contact-section">
+                
+                <div className="container">
                             <div className="row">
                                 <div className="col-12">
                                     <div className="block-text center">
@@ -88,41 +87,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    {/* <div className="map">
-                        <div className="container">
-                            <div className="row">
-                                <div className="map__main">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86077.66255184308!2d-122.40402224079803!3d47.60810999586645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab3f905c4b1%3A0x96bf575ff75ab1aa!2s411%20University%20St%2C%20Seattle%2C%20WA%2098101%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1584084043716!5m2!1svi!2s" height={600} style={{ border: 0 }} allowFullScreen aria-hidden="false" tabIndex={0} />
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <section className="faq s3">
-                        <div className="shape" />
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-6 col-md-12">
-                                    <div className="block-text">
-                                        <h6 className="sub-heading"><span>FAQs</span></h6>
-                                        <h3 className="heading">Frequently
-                                            <br />
-                                            Aksed Questions</h3>
-                                        <p>Below is a list of frequently asked questions and answers from partners and 3D artist. Please check this FAQ first before contacting us.</p>
-                                    </div>
-                                    <Accordion oneCol/>
-                                </div>
-                                <div className="col-xl-6 col-md-12">
-                                    <div className="image">
-                                        <img src="/assets/images/layouts/img-faq.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> */}
-            </div>
-
-            </Layout>
+            </section>
         </>
     )
 }

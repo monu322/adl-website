@@ -45,7 +45,7 @@ export default function TestimonialSlider2() {
                 
                     <div className="box-testimonial center">
                         <div className="image">
-                            <img src="/assets/images/layouts/avt-09.png" alt="" />
+                            <img src="/assets/images/team/niju.jpeg" alt="" />
                         </div>
                         <div className="info">
                             <h5 className="name">Niju Thomas</h5>

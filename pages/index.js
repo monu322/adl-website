@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import About1 from "@/components/sections/About1"
+import Contact from "@/components/sections/contact"
 import Banner1 from "@/components/sections/Banner1"
 import Create1 from "@/components/sections/Create1"
 import Faq1 from "@/components/sections/Faq1"
@@ -24,6 +25,7 @@ export default function Home() {
                 <Testimonials2 />
                 {/*<Faq1 /> */}
                 <Create1 />
+                <Contact/>
             </Layout>
         </>
     )

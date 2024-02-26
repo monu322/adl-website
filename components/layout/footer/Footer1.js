@@ -44,12 +44,11 @@ export default function Footer1() {
                                 <a href="/" className="logo"><img width={250} src="/assets/images/logo/adl-logo.svg" alt="" /></a>
                                 <div className="center mb--30">
                                     <ul className="list">
-                                        <li><a href="/">Home</a></li>
-                                        <li><a onClick={(e) => scrolltoHash('about-section')} href="/about">About</a></li>
-                                        <li><a onClick={(e) => scrolltoHash('features-section')} href="/features">Features</a></li>
-                                        <li><a onClick={(e) => scrolltoHash('roadmap-section')} href="/roadmap">Roadmap</a></li>
-                                        <li><a onClick={(e) => scrolltoHash('team-section')} href="/team">Team</a></li>
-                                        <li><a href="/contact">Contact</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('about-section')} >About</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('features-section')} >Features</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('roadmap-section')} >Roadmap</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('team-section')} >Team</a></li>
+                                        <li><a onClick={(e) => scrolltoHash('contact-section')}>Contact</a></li>
                                     </ul>
                                     <p>Copyright © {new Date().getFullYear()}, ADL Robotics.</p>
                                 </div>
