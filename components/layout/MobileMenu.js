@@ -1,12 +1,35 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-export default function MobileMenu({ isMobileMenu }) {
+export default function MobileMenu({ showMobMenu, setShowMobMenu }) {
 
     const [isActive, setIsActive] = useState({
         status: false,
         key: "",
     })
+
+    // let's make a function that receive the specific element_id as string and scroll into that element_id
+    const scrolltoHash = function (element_id) {
+
+        setShowMobMenu(!showMobMenu)
+        
+        const element = document.getElementById(element_id)
+        console.log(element)
+        console.log(element.offsetTop)
+
+        const scrollTop = element.offsetTop
+        
+        if(window)
+        {
+            window.scrollTo({
+                top: scrollTop-150,
+                behavior: 'smooth',
+            })
+        }
+
+        return false;
+
+    }
 
     const handleToggle = (key) => {
         if (isActive.key === key) {
@@ -22,9 +45,9 @@ export default function MobileMenu({ isMobileMenu }) {
     }
     return (
         <>
-            <nav id="main-nav-mobi" className="main-nav" style={{ display: `${isMobileMenu ? "block" : "none"}` }}>
+            <nav id="main-nav-mobi" className="main-nav" style={{ display: `${showMobMenu ? "block" : "none"}` }}>
                 <ul id="menu-primary-menu" className="menu">
-                    <li className="menu-item menu-item-has-children menu-current-item">
+                    {/* <li className="menu-item menu-item-has-children menu-current-item">
                         <Link href="/#">Home</Link>
                         <span className={isActive.key == 1 ? "arrow active" : "arrow"} onClick={() => handleToggle(1)} />
                         <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
@@ -39,35 +62,18 @@ export default function MobileMenu({ isMobileMenu }) {
                             <li className="menu-item"><Link href="/itemcarousel">Item Carousel</Link></li>
                             <li className="menu-item"><Link href="/3dcarousel">3D Carousel</Link></li>
                         </ul>
-                    </li>
-                    <li className="menu-item menu-item-has-children">
-                        <Link href="/#">Explore</Link>
-                        <span className={isActive.key == 2 ? "arrow active" : "arrow"} onClick={() => handleToggle(2)} />
-                        <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
-                            <li className="menu-item"><Link href="/nft">NFTs</Link></li>
-                            <li className="menu-item"><Link href="/blog">Blog List</Link></li>
-                            <li className="menu-item"><Link href="/blog-details">Blog Details</Link></li>
-                            <li className="menu-item"><Link href="/vision-mission">Visions &amp;
-                                Mission</Link></li>
-                            <li className="menu-item"><Link href="/help-center">Help Center</Link></li>
-                            <li className="menu-item"><Link href="/parti-asset">Participants &amp;
-                                Assets</Link></li>
-                            <li className="menu-item"><Link href="/advisor">Advisors &amp; Backers</Link></li>
-                            <li className="menu-item"><Link href="/partner">Partners &amp; Investors</Link>
-                            </li>
-                        </ul>
+                    </li> */}
+                    <li className="menu-item">
+                        <a onClick={(e) => scrolltoHash('about-section')}>About</a>
                     </li>
                     <li className="menu-item">
-                        <Link href="/about">About</Link>
+                        <a onClick={(e) => scrolltoHash('features-section')}>Features</a>
                     </li>
                     <li className="menu-item">
-                        <Link href="/roadmap">RoadMap</Link>
+                        <a onClick={(e) => scrolltoHash('roadmap-section')}>RoadMap</a>
                     </li>
                     <li className="menu-item">
-                        <Link href="/team">Team</Link>
-                    </li>
-                    <li className="menu-item">
-                        <Link href="/contact">Contact</Link>
+                        <a onClick={(e) => scrolltoHash('team-section')}>Team</a>
                     </li>
                 </ul>
             </nav>

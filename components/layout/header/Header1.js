@@ -1,7 +1,10 @@
 import Link from "next/link"
+import { useState } from 'react'
 import MobileMenu from "../MobileMenu"
 
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big }) {
+
+    const [showMobMenu, setShowMobMenu] = useState(false)
     
     // let's make a function that receive the specific element_id as string and scroll into that element_id
     const scrolltoHash = function (element_id) {
@@ -79,14 +82,14 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big })
                                     </nav>
 
                                     <a onClick={(e) => scrolltoHash('contact-section')} className="action-btn"><span>Get in touch</span></a>
-                                    <div className="mobile-button" onClick={handleMobileMenu}><span /></div>
+                                    <div className="mobile-button" onClick={()=>setShowMobMenu(!showMobMenu)}><span /></div>
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
                 </div>
-                <MobileMenu isMobileMenu={isMobileMenu} />
+                <MobileMenu showMobMenu={showMobMenu} setShowMobMenu={setShowMobMenu}/>
             </header>
 
         </>
