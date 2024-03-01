@@ -11,6 +11,7 @@
         "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
     },
     "dependencies": {
+        "@mailchimp/mailchimp_marketing": "^3.0.80",
         "aos": "^2.3.4",
         "axios": "^1.6.7",
         "eslint": "8.41.0",
