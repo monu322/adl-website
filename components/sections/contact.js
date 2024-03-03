@@ -93,7 +93,7 @@ export default function Contact() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <p>contact@adlrobotics.com</p>
+                    <p>operations@adlrobotics.com</p>
                   </li>
                 </ul>
                 <div className="image">
