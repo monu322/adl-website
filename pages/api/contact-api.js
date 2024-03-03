@@ -17,7 +17,7 @@ export default async function handler(req, res) {
       await transporter.sendMail({
         from: process.env.EMAIL_USERNAME,
         to: process.env.EMAIL_USERNAME, 
-        subject: `ADL Robot Contact Form Submission from website : ${values.subject|| 'No subject'}`,
+        subject: `${values.subject|| 'No subject'} : ADL Robot Contact Form Submission from website`,
         html: `
         <!DOCTYPE html>
         <html lang="en">
