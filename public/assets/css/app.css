@@ -6716,3 +6716,9 @@ section.banner.s3.s2 .container .swiper-button-prev {
 #contact-section {
   padding-bottom: 100px;
 }
+
+.contact .error-message {
+  color: #ffc35a;
+  margin-top: 4px;
+  font-size: 12px;
+}

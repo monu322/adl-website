@@ -21,8 +21,7 @@ export default function Contact() {
       .email("Invalid email address")
       .required("Please enter your email"),
     phone: Yup.string()
-      .required("Please enter your phone number")
-      .matches(/^\d+$/, "Phone number must contain only digits"), // Regex for digits only
+      .required("Please enter your phone number"),
     subject: Yup.string()
       .required("Please enter a subject")
       .min(5, "Subject must be at least 5 characters long")
