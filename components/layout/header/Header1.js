@@ -81,7 +81,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big })
                                         </ul>
                                     </nav>
 
-                                    <a onClick={(e) => scrolltoHash('contact-section')} className="action-btn"><span>Get in touch</span></a>
+                                    <a onClick={(e) => scrolltoHash('contact-section')} className="action-btn"><span>Contact</span></a>
                                     <div className="mobile-button" onClick={()=>setShowMobMenu(!showMobMenu)}><span /></div>
                                 </div>
                                 
