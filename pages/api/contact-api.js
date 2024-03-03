@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
       await transporter.sendMail({
         from: process.env.EMAIL_USERNAME,
-        to: process.env.TO_EMAIL, 
+        to: process.env.EMAIL_USERNAME, 
         subject: `Contact Form Submission from ${values.name}`,
         html: `
         <!DOCTYPE html>
