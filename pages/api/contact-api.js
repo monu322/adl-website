@@ -17,14 +17,14 @@ export default async function handler(req, res) {
       await transporter.sendMail({
         from: process.env.EMAIL_USERNAME,
         to: process.env.EMAIL_USERNAME, 
-        subject: `Contact Form Submission from ${values.name}`,
+        subject: `ADL Robot Contact Form Submission from website : ${values.subject|| 'No subject'}`,
         html: `
         <!DOCTYPE html>
         <html lang="en">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Contact Form Submission</title>
+          <title>ADL Robot Contact Form Submission</title>
           <style>
             /* Reset CSS */
             body, html {
