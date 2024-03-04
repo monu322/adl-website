@@ -70,7 +70,7 @@ export default async function handler(req, res) {
         .status(201)
         .json({ message: "Success! Check your email for confirmation." });
     } catch (error) {
-      console.log(error);
+      console.log('Mailchimp subscribe error: ', error);
       return res.status(500).json({ error: error.message || 'Something went wrong' });
     }
   } else {

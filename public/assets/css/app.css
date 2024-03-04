@@ -3287,9 +3287,9 @@ img.mfp-img {
   transition: all 0.3s ease-in-out;
 }
 
-.speciality-box:hover .icon {
+/* .speciality-box:hover .icon {
   transform: translate(-50%, -50%) rotateY(-360deg);
-}
+} */
 
 .speciality-box:hover .number {
   color: white;
@@ -6710,6 +6710,10 @@ section.banner.s3.s2 .container .swiper-button-prev {
 @media only screen and (max-width: 600px) {
   .touch__main .info .image {
     margin-left: 0px;
+  }
+
+  .form-box .col-md-6 {
+    margin-bottom: 25px;
   }
 }
 

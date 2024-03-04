@@ -18,7 +18,7 @@ export default function Roadmap1() {
                                 mobile robot for the domestic space. The ChatGPT for your home.</p>
                                
                             </div>
-                            <div className="roadmap__main" data-aos="fade-up" data-aos-duration={2000}>
+                            <div className="roadmap__main" data-aos="fade-up" data-aos-duration={1000}>
                                 <div className="roadmap-box">
                                     <div className="time">Step 1</div>
                                     <div className="content">

@@ -137,7 +137,7 @@ export default function Portfolio1() {
                         </div>
                         <div className="col-md-7">
                             <div className="portfolio__right">
-                                <div className="image" data-aos="fade-left" data-aos-duration={2000}>
+                                <div className="image" data-aos="fade-left" data-aos-duration={1000}>
                                     <img className="portfolio__right_img" src="/assets/images/layouts/adl-full.JPG" alt="" />
                                 </div>
                             </div>
