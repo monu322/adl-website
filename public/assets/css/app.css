@@ -6568,7 +6568,7 @@ section.banner.s3.s2 .container .swiper-button-prev {
   position: absolute;
   height: 105%;
   top: -15%;
-  right: -35%;
+  right: -17%;
   z-index: -1;
 }
 
@@ -6624,7 +6624,7 @@ section.banner.s3.s2 .container .swiper-button-prev {
 
 @media only screen and (max-width: 1200px) {
   .banner-video {
-    right: -75%;
+    right: -50%;
   }
 }
 
