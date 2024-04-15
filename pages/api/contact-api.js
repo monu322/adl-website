@@ -66,7 +66,7 @@ export default async function handler(req, res) {
         </head>
         <body>
           <div class="container">
-            <h2>Contact Form Submission</h2>
+            <h2>ADL Contact Form Submission</h2>
         
             <p><strong>Name:</strong> ${values.name}</p>
             <p><strong>Email:</strong> ${values.email}</p>
