@@ -3,11 +3,13 @@ import { Canvas } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Plane } from '@react-three/drei';
 
 function Model() {
-  const { scene } = useGLTF('/assets/model/full_machine_assem2.glb');
+  const { scene } = useGLTF('/assets/model/Final.glb');
   
   // Setting the model's scale and position
-  scene.scale.set(2, 2, 2); // Uniform scaling
-  scene.position.set(-1, -2, -1); // Adjusting position to center the model
+  scene.scale.set(2.5 , 2.5, 2.5); // Uniform scaling
+  // scene.position.set(0, -2, -1); // Adjusting position to center the model
+  scene.position.set(-1.5, -2.5, 0); // Adjusting position to center the model
+  scene.rotation.set(0, 1, 0); // Adjusting rotation to center the model
 
   return <primitive object={scene} />;
 }
@@ -16,7 +18,7 @@ export default function ModelViewer() {
   return (
     <div className="container mt-4">
       <div className="row">
-        <div className="col-12" style={{ height: '60vh' }}>
+        <div className="col-12" style={{ height: '700px' }}>
           <Canvas>
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
@@ -43,4 +45,4 @@ export default function ModelViewer() {
   );
 }
 
-useGLTF.preload('/assets/model/full_machine_assem2.glb');
+useGLTF.preload('/assets/model/Final.glb');

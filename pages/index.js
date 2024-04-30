@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import About1 from "@/components/sections/About1"
+import VideoPlayerSection from "@/components/sections/VideoPlayer"
 import Contact from "@/components/sections/contact"
 import Banner1 from "@/components/sections/Banner1"
 import Create1 from "@/components/sections/Create1"
@@ -17,6 +18,7 @@ export default function Home() {
             <Layout headerStyle={1} footerStyle={1} big>
                 <Banner1 />
                 <About1 />
+                <VideoPlayerSection />
                 <Speciality1 />
                 <Portfolio1 />
                 {/* <Project1 /> */}
