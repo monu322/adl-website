@@ -31,8 +31,30 @@ const VideoPlayerSection = () => {
   }, []);
 
   return (
-    <section style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
-      <video
+    // <section style={{ width: '100%', height: '80vh', overflow: 'hidden' }} className='container'>
+    //   <video
+    //     ref={videoRef}
+    //     src="https://adlrobotics.com/adl-demo-video.mp4" 
+    //     type="video/mp4"
+    //     autoPlay
+    //     controls
+    //     muted 
+    //     loop 
+    //     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+    //   />
+    // </section>
+    <section className="speciality" id="features-section">
+<div className="shape right" />
+<div className="container">
+    <div className="row">
+        <div className="col-12">
+            <div className="block-text center">
+                <h6 className="sub-heading"><span>Future of Living</span></h6>
+                <h3 className="heading wow"> How it works 
+                 </h3>
+        </div>
+    </div>
+    <video
         ref={videoRef}
         src="https://adlrobotics.com/adl-demo-video.mp4" 
         type="video/mp4"
@@ -42,7 +64,10 @@ const VideoPlayerSection = () => {
         loop 
         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       />
-    </section>
+    
+</div>
+</div>
+</section >
   );
 };
 // /assets/images/background/thumbanil.png
@@ -105,3 +130,29 @@ export default VideoPlayerSection;
 // };
 
 // export default VideoPlayerSection;
+
+{/* <section className="speciality" id="features-section">
+<div className="shape right" />
+<div className="container">
+    <div className="row">
+        <div className="col-12">
+            <div className="block-text center">
+                <h6 className="sub-heading"><span>The Features</span></h6>
+                <h3 className="heading wow">Radical solutions for <br />
+                    for a better future</h3>
+        </div>
+    </div>
+    <video
+        ref={videoRef}
+        src="https://adlrobotics.com/adl-demo-video.mp4" 
+        type="video/mp4"
+        autoPlay
+        controls
+        muted 
+        loop 
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      />
+    
+</div>
+</div>
+</section > */}
