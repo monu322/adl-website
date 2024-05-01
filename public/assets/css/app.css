@@ -3287,9 +3287,9 @@ img.mfp-img {
   transition: all 0.3s ease-in-out;
 }
 
-.speciality-box:hover .icon {
+/* .speciality-box:hover .icon {
   transform: translate(-50%, -50%) rotateY(-360deg);
-}
+} */
 
 .speciality-box:hover .number {
   color: white;
@@ -6624,7 +6624,7 @@ section.banner.s3.s2 .container .swiper-button-prev {
 
 @media only screen and (max-width: 1200px) {
   .banner-video {
-    right: -75%;
+    right: -50%;
   }
 }
 
@@ -6711,8 +6711,18 @@ section.banner.s3.s2 .container .swiper-button-prev {
   .touch__main .info .image {
     margin-left: 0px;
   }
+
+  .form-box .col-md-6 {
+    margin-bottom: 25px;
+  }
 }
 
 #contact-section {
   padding-bottom: 100px;
+}
+
+.contact .error-message {
+  color: #ffc35a;
+  margin-top: 4px;
+  font-size: 12px;
 }
