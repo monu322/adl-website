@@ -56,7 +56,7 @@ const VideoPlayerSection = () => {
     </div>
     <video
         ref={videoRef}
-        src="https://adlrobotics.com/adl-demo-video.mp4" 
+        src="/desk.mp4" 
         type="video/mp4"
         autoPlay
         controls
