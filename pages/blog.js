@@ -11,7 +11,7 @@ export default function Blog() {
                             <div className="bloglist__main">
                                 <div className="list">
                                     <div className="blog-box-2">
-                                        <div className="images">
+                                        <div className="image">
                                             <Link href="/blog-details">
                                                 <img src="/assets/images/layouts/blog-01.png" alt="" />
                                             </Link>
