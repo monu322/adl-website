@@ -12,8 +12,8 @@
     },
     "dependencies": {
         "@mailchimp/mailchimp_marketing": "^3.0.80",
-        "@react-three/drei": "^9.99.5",
-        "@react-three/fiber": "^8.15.16",
+        "@react-three/drei": "^9.105.6",
+        "@react-three/fiber": "^8.16.6",
         "aos": "^2.3.4",
         "axios": "^1.6.7",
         "eslint": "8.41.0",
