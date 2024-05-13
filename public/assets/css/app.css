@@ -6558,7 +6558,7 @@ section.banner.s3.s2 .container .swiper-button-prev {
   height: auto;
 }
 
-//custome styles
+
 
 .banner {
   position: relative;
@@ -6568,7 +6568,7 @@ section.banner.s3.s2 .container .swiper-button-prev {
   position: absolute;
   height: 105%;
   top: -15%;
-  right: -17%;
+  /* right: -35%; */
   z-index: -1;
 }
 
