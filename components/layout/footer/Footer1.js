@@ -39,7 +39,7 @@ export default function Footer1() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="footer__main">
+              {/* <div className="footer__main">
                 <div className="block-text center">
                   <h3 className="heading">Get Newsletter</h3>
                   <p>Get updated with our news, updates, and achievements.</p>
@@ -59,7 +59,7 @@ export default function Footer1() {
                     <span>Subscribe</span>
                   </button>
                 </form>
-              </div>
+              </div> */}
               <div className="footer__bottom">
                 <a href="/" className="logo">
                   <img
@@ -72,17 +72,17 @@ export default function Footer1() {
                   <ul className="list">
                     <li>
                       <a onClick={(e) => scrolltoHash("about-section")}>
-                        About
+                      Privacy Policy
                       </a>
                     </li>
                     <li>
                       <a onClick={(e) => scrolltoHash("features-section")}>
-                        Features
+                      Terms of Service
                       </a>
                     </li>
                     <li>
                       <a onClick={(e) => scrolltoHash("roadmap-section")}>
-                        Roadmap
+                      Contact Us
                       </a>
                     </li>
                     <li>
@@ -90,7 +90,7 @@ export default function Footer1() {
                     </li>
                     <li>
                       <a onClick={(e) => scrolltoHash("contact-section")}>
-                        Contact
+                      Sitemap
                       </a>
                     </li>
                   </ul>

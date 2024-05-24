@@ -18,7 +18,7 @@ export default function Blog2() {
                         <div className="col-md-4">
                             <div className="blog-box">
                                 <div className="image">
-                                    <Link href="/blog-details">
+                                    <Link href="/blog-details-1">
                                         <img src="/assets/images/layouts/blog-01.png" alt="" />
                                     </Link>
                                 </div>
