@@ -1,4 +1,3 @@
-// import { useRef, useEffect } from 'react';
 
 // const VideoPlayerSection = () => {
 //   const videoRef = useRef(null);
