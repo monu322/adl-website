@@ -1,10 +1,9 @@
 
-
-import Accordion2 from '../elements/Accordion2'
+import RestaurantFaq from '@/components/elements/RestaurantFaq'
 export default function Faq4() {
     return (
         <>
-            <section className="faq s3">
+            <section className="faq s3 mb-150">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-md-12">
@@ -15,7 +14,7 @@ export default function Faq4() {
                                     Aksed Questions</h3>
                                 {/* <p>Below is a list of frequently asked questions and answers from partners and 3D artist. Please check this FAQ first before contacting us.</p> */}
                             </div>
-                            <Accordion2 oneCol/>
+                            <RestaurantFaq oneCol/>
                         </div>
                         <div className="col-xl-6 col-md-12">
                             <div className="image" data-aos="fade-left" data-aos-duration={2000}>

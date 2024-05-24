@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Token1() {
   return (
     <>
-      <section className="token mt-4 mb-50">
+      <section className="token pt-150">
         <div className="shape" />
         <div className="container">
           <div className="row ">
@@ -41,16 +41,15 @@ export default function Token1() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <h6>Quality of Life Improvement</h6>
+                      <h6>Enhanced Kitchen Efficiency</h6>
                     </div>
                     <div className="content col-8">
                       <p>
-                        <b>More Free Time:</b> Spend more time on hobbies,
-                        social interactions, and personal development.
+                        <b>Faster Prep Times:</b> Speed up food preparation with automated assistance.
                       </p>
                       <p>
-                        <b>Stress Reduction:</b> Lower stress levels by
-                        offloading daily chores.
+                        <b>Consistent Quality:</b> Ensure consistent ingredient preparation and cooking processes.
+
                       </p>
                     </div>
                   </li>
@@ -71,16 +70,15 @@ export default function Token1() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <h6>Economic Impact</h6>
+                      <h6>Improved Customer Service</h6>
                     </div>
                     <div className="content col-8">
                       <p>
-                        <b>Job Creation:</b> Creating jobs in robotics,
-                        engineering, and customer support.
+                        <b>Focused Staff:</b> Allow your staff to concentrate on delivering exceptional customer service and culinary excellence.
                       </p>
                       <p>
-                        <b>Cost Savings:</b> Automating tasks to save on labor
-                        costs and increase efficiency.
+                        <b>Reduced Wait Times:</b> Streamline kitchen operations to reduce customer wait times.
+
                       </p>
                     </div>
                   </li>
@@ -101,14 +99,16 @@ export default function Token1() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <h6>Emergency and Disaster Response</h6>
+                      <h6>Increased Profitability</h6>
                     </div>
                     <div className="content col-8">
                       <p>
-                        <b>Search and Rescue:</b> Navigating dangerous environments to find and assist survivors.
+                        <b>Cost Savings:</b> Lower operational costs through automation of kitchen and maintenance tasks.
+
                       </p>
                       <p>
-                        <b>Aid Delivery:</b> Delivering essential supplies in hard-to-reach areas.
+                        <b>Higher Turnove:</b>Serve more customers by optimizing kitchen efficiency and reducing turnaround time.
+
                       </p>
                     </div>
                   </li>
@@ -129,14 +129,15 @@ export default function Token1() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <h6>Social Interaction</h6>
+                      <h6>Hygiene and Safety</h6>
                     </div>
                     <div className="content col-8">
                       <p>
-                        <b>Companionship:</b> Providing conversation and entertainment for those who are lonely.
+                        <b>Sanitary Environment:</b> Maintain a cleaner kitchen and dining area with regular, automated cleaning.
+
                       </p>
                       <p>
-                        <b>Educational Games:</b> Engaging in interactive games to promote learning.
+                        <b>Enhanced Safety:</b>Reduce the risk of accidents and ensure compliance with health standards.
                       </p>
                     </div>
                   </li>

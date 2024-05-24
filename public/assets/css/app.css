@@ -390,6 +390,36 @@ h6,
   margin-bottom: 50px;
 }
 
+.mb-150 {
+  margin-bottom:150px;
+}
+.mt-150 {
+  margin-top:150px;
+}
+.mb-200 {
+  margin-bottom:200px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pb-150 {
+  padding-bottom:150px;
+}
+
+.pb-200 {
+  padding-bottom:200px;
+}
+
+.pt-150 {
+  padding-top:150px;
+}
+
+.pt-200 {
+  padding-top:200px;
+}
+
 .mb-53 {
   margin-bottom: 53px;
 }
@@ -2137,6 +2167,7 @@ a {
   padding: 20px;
   padding-left: 20%;
   width: 100%;
+  font-size: 10rem;
 }
 
 .category-title {
@@ -2144,6 +2175,17 @@ a {
   font-size: 4rem; /* Increase font size */
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1150px) {
+  /* Your styles for screens 1150px wide or less go here */
+
+  .category-title {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increase font size */
+    font-weight: bold;
+  }
+}
+
 
 .operations-list {
   text-align: left; /* Align operations list to the left */

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Categories from "./Portfolio4";
+import Categories from "../Portfolio4";
 
 export default function Portfolio3() {
   return (
     <>
-     <div className="col-12">
+     <div className="col-12 pt-5">
               <div className="block-text center">
                 <h6 className="sub-heading">
                   <span>The capabilities</span>

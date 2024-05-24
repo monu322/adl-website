@@ -26,7 +26,7 @@ export default function About1() {
 
     return (
         <>
-            <section className="about mb-50" id="about-section">
+            <section className="about mb-150" id="about-section">
                 <div className="shape" />
                 <div className="container">
                     <div className="row rev">
