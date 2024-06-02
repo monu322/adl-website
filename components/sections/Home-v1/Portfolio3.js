@@ -4,13 +4,13 @@ import Categories from "../Portfolio4";
 export default function Portfolio3() {
   return (
     <>
-     <div className="col-12 pt-5">
+     <div className="col-12 pt-5" id="work-environments-section">
               <div className="block-text center">
                 <h6 className="sub-heading">
                   <span>The capabilities</span>
                 </h6>
                 <h3 className="portfolio1-heading" data-splitting>
-                  Our Robot’s Capabilities
+                  Work Environments
                 </h3>
               </div>
     </div>

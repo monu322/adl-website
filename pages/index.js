@@ -26,15 +26,15 @@ export default function Home() {
                 <Speciality1 />
                 <Portfolio1 />
                 {/* <Portfolio2 /> */}
-                <Token2/>
+                {/* <Token2/> */}
                 {/* <Project1 /> */}
                 {/* <Roadmap1 /> */}
                 {/* <Team1 /> */}
-                <Testimonials4 />
+                {/* <Testimonials4 /> */}
                 <How/>
                 {/*<Faq1 /> */}
                 <Create1 />
-                <Blog4/>
+                {/* <Blog4/> */}
                 <Faq4/>
                 <Contact/>
             </Layout>

@@ -3,7 +3,7 @@ import TestimonialSlider3 from "../../slider/TestimonialSlider1"
 export default function Testimonials3() {
     return (
         <>
-            <section className="testimonials s2 mt-150">
+            <section className="testimonials s2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

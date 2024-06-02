@@ -7,8 +7,6 @@ export default function About1() {
   const scrolltoHash = function (element_id) {
     
     const element = document.getElementById(element_id)
-    console.log(element)
-    console.log(element.offsetTop)
 
     const scrollTop = element.offsetTop
     
@@ -26,7 +24,7 @@ export default function About1() {
 
     return (
         <>
-            <section className="about mb-150" id="about-section">
+            <section className="about" id="about-section">
                 <div className="shape" />
                 <div className="container">
                     <div className="row rev">
@@ -46,10 +44,10 @@ export default function About1() {
                                 <h6 className="sub-heading"><span>About us</span></h6>
                                 <h3 className="heading wow" data-splitting>Building the
                                     Robot of the future</h3>
-                                <p className="mb-17">Welcome to [Company Name], where innovation meets everyday convenience.</p>
-                                <p className="mb-17">Our mission is to transform lives by providing advanced general-purpose robots designed to assist with Activities of Daily Living (ADL).</p>
-                                <p className="mb-26">Our cutting-edge technology aims to enhance independence, increase productivity, and improve the overall quality of life for individuals and families worldwide.</p>
-                                {/* <a onClick={(e) => scrolltoHash('features-section')} className="action-btn"><span>Learn More</span></a> */}
+                                <p className="mb-17">At ADL Robotics, we are building the workforce of the future.</p>
+                                <p className="mb-17">Our mission is to transform the future of work by providing advanced general-purpose robots designed to assist with Activities of Daily Living (ADL).</p>
+                                <p className="mb-26">Our cutting-edge technology aims to enhance independence, increase productivity, and improve the overall efficiency for enterprices worldwide.</p>
+                                <a onClick={(e) => scrolltoHash('work-environments-section')} className="action-btn"><span>Learn More</span></a>
                             </div>
                         </div>
                     </div>
