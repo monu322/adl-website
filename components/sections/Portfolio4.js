@@ -4,88 +4,84 @@ import React from 'react';
 
 const data = [
     {
-      "category": "Restaurant Operations",
-      "img": "/assets/images/enviorments/full-1.jpg",
+      "category": "Restaurants",
+      "img": "/assets/images/enviorments/robot-in-kitchen2.jpeg",
       "operations": [
         {
           "title": "Prep and maintenance operations",
-          "details": "Cutting, mixing, cleaning, inventory"
+          "details": "Automates food prep and maintenance operations like Cutting, mixing, cleaning and inventory management."
         },
         {
           "title": "Employee Support",
-          "details": "Reducing mundane tasks so that they do what they do best."
+          "details": "Handles mundane tasks in your workplace so that your employees can do what they do best, cook great food and provide mazing customer service."
         }
       ]
     },
     {
-      "category": "Elderly and Disabled Care",
-      "img": "/assets/images/enviorments/2.jpg",
+      "category": "Retail Stores",
+      "img": "/assets/images/enviorments/robot-in-retail.png",
       "operations": [
         {
-          "title": "Independence",
-          "details": "Assistance with dressing, bathing, eating, and mobility."
-        },
-        {
-          "title": "Caregiver Support",
-          "details": "Reducing the physical and emotional burden on caregivers."
+          "title": "Free Up Your Staff for Customer Interaction",
+          "details": "Our robots handle routine and repetitive tasks such as shelving, cleaning, and facing products. This allows your employees to focus on providing excellent customer service and engaging more meaningfully with shoppers."
         }
       ]
     },
-    {
-      "category": "Healthcare Support",
-      "img": "/assets/images/enviorments/77.webp",
-      "operations": [
-        {
-          "title": "Hospital Efficiency",
-          "details": "Transporting supplies and supporting patient care."
-        },
-        {
-          "title": "Home Healthcare",
-          "details": "Monitoring vital signs and administering medications."
-        }
-      ]
-    },
-    {
-      "category": "Domestic Productivity",
-      "img": "/assets/images/enviorments/88.jpg",
-      "operations": [
-        {
-          "title": "Domestic Tasks",
-          "details": "Handling chores like cleaning, cooking, and laundry."
-        },
-        {
-          "title": "Workplace Assistance",
-          "details": "Performing repetitive or strenuous tasks."
-        }
-      ]
-    },
-    {
-      "category": "Enhanced Home Security",
-      "img": "/assets/images/enviorments/1.jpg",
-      "operations": [
-        {
-          "title": "Surveillance",
-          "details": "Monitoring homes for security threats."
-        },
-        {
-          "title": "Emergency Response",
-          "details": "Assisting in evacuation procedures during emergencies."
-        }
-      ]
-    }
+    // {
+    //   "category": "Healthcare Support",
+    //   "img": "/assets/images/enviorments/77.webp",
+    //   "operations": [
+    //     {
+    //       "title": "Hospital Efficiency",
+    //       "details": "Transporting supplies and supporting patient care."
+    //     },
+    //     {
+    //       "title": "Home Healthcare",
+    //       "details": "Monitoring vital signs and administering medications."
+    //     }
+    //   ]
+    // },
+    // {
+    //   "category": "Domestic Productivity",
+    //   "img": "/assets/images/enviorments/88.jpg",
+    //   "operations": [
+    //     {
+    //       "title": "Domestic Tasks",
+    //       "details": "Handling chores like cleaning, cooking, and laundry."
+    //     },
+    //     {
+    //       "title": "Workplace Assistance",
+    //       "details": "Performing repetitive or strenuous tasks."
+    //     }
+    //   ]
+    // },
+    // {
+    //   "category": "Enhanced Home Security",
+    //   "img": "/assets/images/enviorments/1.jpg",
+    //   "operations": [
+    //     {
+    //       "title": "Surveillance",
+    //       "details": "Monitoring homes for security threats."
+    //     },
+    //     {
+    //       "title": "Emergency Response",
+    //       "details": "Assisting in evacuation procedures during emergencies."
+    //     }
+    //   ]
+    // }
   ]
     
 
 const Categories = () => {
   return (
-    <div className="categories-container">
+    <div className="categories-container row">
       {data.map((item, index) => (
         <div
           key={index}
           className="category-section"
           style={{ backgroundImage: `url(${item.img})` }}
         >
-          <div className="category-content">
+          <div className="category-content col-md-6">
             <h2 className="category-title">{item.category}</h2>
             <div className="operations-list">
               {item.operations.map((operation, opIndex) => (

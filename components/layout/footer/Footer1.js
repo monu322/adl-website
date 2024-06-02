@@ -5,6 +5,25 @@ export default function Footer1() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+      // let's make a function that receive the specific element_id as string and scroll into that element_id
+      const scrolltoHash = function (element_id) {
+    
+        const element = document.getElementById(element_id)
+    
+        const scrollTop = element.offsetTop
+        
+        if(window)
+        {
+            window.scrollTo({
+                top: scrollTop-150,
+                behavior: 'smooth',
+            })
+        }
+    
+        return false;
+    
+      }
+
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
@@ -71,26 +90,16 @@ export default function Footer1() {
                 <div className="center mb--30">
                   <ul className="list">
                     <li>
-                      <a onClick={(e) => scrolltoHash("about-section")}>
-                      Privacy Policy
+                      <a onClick={(e) => scrolltoHash("work-environments-section")}>
+                      Workspaces
                       </a>
                     </li>
                     <li>
-                      <a onClick={(e) => scrolltoHash("features-section")}>
-                      Terms of Service
-                      </a>
+                      <a onClick={(e) => scrolltoHash("about-section")}>About</a>
                     </li>
                     <li>
-                      <a onClick={(e) => scrolltoHash("roadmap-section")}>
-                      Contact Us
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={(e) => scrolltoHash("team-section")}>Team</a>
-                    </li>
-                    <li>
-                      <a onClick={(e) => scrolltoHash("contact-section")}>
-                      Sitemap
+                      <a onClick={(e) => scrolltoHash("how-it-works")}>
+                      How it works
                       </a>
                     </li>
                   </ul>

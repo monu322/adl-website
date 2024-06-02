@@ -37,7 +37,6 @@ export default function Contact() {
     values,
     { setSubmitting, resetForm, setFieldError }
   ) => {
-    console.log(values);
     try {
       const response = await axios.post("/api/contact-api", values);
       setSuccessMessage("Message submitted successfully");

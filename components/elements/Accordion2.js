@@ -40,31 +40,63 @@ export default function Accordion2({oneCol}) {
  <span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                                         <p>
-                                        Our robots are designed to assist with a wide range of ADL tasks including cleaning, cooking, personal care, and more.
+                                        Our robots are designed to assist with a variety of tasks including customer service, order delivery, inventory management, cleaning, and more.
                                         </p>
                                     </div>
                                 </div>
                                 <div className={isActive.key == 2 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(2)}>
-                                    <h6 className={isActive.key == 2 ? "toggle-title active" : "toggle-title"}><span>02.</span> How does the robot enhance home security?<span className="icon-plus" /></h6>
+                                    <h6 className={isActive.key == 2 ? "toggle-title active" : "toggle-title"}><span>02.</span> How can your robots improve the efficiency of our operations?<span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                                         <p>
-                                        Equipped with advanced sensors and cameras, our robots monitor your home for any security threats and can alert you or authorities if needed.
+                                        Our robots can streamline processes by handling repetitive tasks, reducing human error, and freeing up staff to focus on higher-value activities, ultimately enhancing overall efficiency.
                                         </p>
                                     </div>
                                 </div>
                                 <div className={isActive.key == 3 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(3)}>
-                                    <h6 className={isActive.key == 3 ? "toggle-title active" : "toggle-title"}><span>03.</span> Can the robots be customized?<span className="icon-plus" /></h6>
+                                    <h6 className={isActive.key == 3 ? "toggle-title active" : "toggle-title"}><span>03.</span> Are your robots customizable to fit our specific needs and brand?<span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                                         <p>
-                                        Yes, we offer customization options to meet specific needs and preferences.
+                                        Yes, our robots can be customized with specific features, functions, and branding elements to align with your business requirements and corporate identity.
                                         </p>
                                     </div>
                                 </div>
                                 <div className={isActive.key == 4 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(4)}>
-                                    <h6 className={isActive.key == 4 ? "toggle-title active" : "toggle-title"}><span>04.</span> What kind of support is available?<span className="icon-plus" /></h6>
+                                    <h6 className={isActive.key == 4 ? "toggle-title active" : "toggle-title"}><span>04.</span> What is the typical return on investment (ROI) for implementing your robots?<span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
                                         <p>
-                                        We provide comprehensive training, ongoing support, and maintenance to ensure your robot remains fully functional.
+                                        While ROI varies based on the specific application and usage, you can typically see a return on investment within 12-18 months due to increased productivity and operational savings.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={isActive.key == 5 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(5)}>
+                                    <h6 className={isActive.key == 5 ? "toggle-title active" : "toggle-title"}><span>05.</span> How do your robots integrate with our existing systems and technologies?<span className="icon-plus" /></h6>
+                                    <div className="toggle-content" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
+                                        <p>
+                                        Our robots are equipped with advanced APIs and are designed to seamlessly integrate with your current point-of-sale systems, inventory management software, and other digital infrastructures.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={isActive.key == 6 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(6)}>
+                                    <h6 className={isActive.key == 6 ? "toggle-title active" : "toggle-title"}><span>06.</span> What support and maintenance services do you provide?<span className="icon-plus" /></h6>
+                                    <div className="toggle-content" style={{ display: `${isActive.key == 6 ? "block" : "none"}` }}>
+                                        <p>
+                                        We offer comprehensive support services, including regular maintenance, software updates, and 24/7 customer support to ensure your robots operate smoothly and efficiently.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={isActive.key == 7 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(7)}>
+                                    <h6 className={isActive.key == 7 ? "toggle-title active" : "toggle-title"}><span>07.</span> How easy is it to train staff to work with your robots?<span className="icon-plus" /></h6>
+                                    <div className="toggle-content" style={{ display: `${isActive.key == 7 ? "block" : "none"}` }}>
+                                        <p>
+                                        Our robots are designed with user-friendly interfaces and we provide thorough training programs to ensure your staff can easily learn to operate and collaborate with the robots.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={isActive.key == 8 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(8)}>
+                                    <h6 className={isActive.key == 8 ? "toggle-title active" : "toggle-title"}><span>08.</span> What is the process for deploying your robots in our locations?<span className="icon-plus" /></h6>
+                                    <div className="toggle-content" style={{ display: `${isActive.key == 8 ? "block" : "none"}` }}>
+                                        <p>
+                                        The deployment process involves an initial consultation to understand your needs, followed by a tailored implementation plan, on-site installation, staff training, and ongoing support to ensure a smooth transition and optimal performance.
                                         </p>
                                     </div>
                                 </div>

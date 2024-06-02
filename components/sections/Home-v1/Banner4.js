@@ -7,8 +7,6 @@ export default function Banner1() {
   const scrolltoHash = function (element_id) {
     
     const element = document.getElementById(element_id)
-    console.log(element)
-    console.log(element.offsetTop)
 
     const scrollTop = element.offsetTop
     
@@ -36,15 +34,15 @@ export default function Banner1() {
                 {/* <div className="shape right" /> */}
                 <div className="container big banner-container banner-container">
                     <div className="row">
-                        <div className="col-xl-6 col-md-12">
-                            <div className="banner__left">
+                        <div className="col-xl-7 col-md-12">
+                            <div className="banner__left pr-20">
                                 <div className="block-text">
                                     {/* <h2 className="heading">World's First<br />
                                         Robot <span className="s1 arlo_tm_animation_text_word" />
                                         Butler</h2> */}
-                                        <h2 className="heading">Revolutionize Your Daily Life with Our General-Purpose Robots</h2>
-                                    <p className="desc">Enhance Independence, Boost Productivity, and Improve Quality of Life</p>
-                                    <a onClick={(e) => scrolltoHash('about-section')} className="action-btn"><span>Explore Our Robots | Learn More</span></a>
+                                        <h2 className="heading">Building the workforce of the future</h2>
+                                    <p className="desc">A general purpose robot to Enhance your workforce, Boost efficiency, and Improve quality of life. </p>
+                                    <a onClick={(e) => scrolltoHash('about-section')} className="action-btn"><span>Learn More</span></a>
                                 </div>
                                 <div className="pay">
                                     <h6>We are supported by</h6>
