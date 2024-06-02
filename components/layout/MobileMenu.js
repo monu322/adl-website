@@ -14,8 +14,6 @@ export default function MobileMenu({ showMobMenu, setShowMobMenu }) {
         setShowMobMenu(!showMobMenu)
         
         const element = document.getElementById(element_id)
-        console.log(element)
-        console.log(element.offsetTop)
 
         const scrollTop = element.offsetTop
         

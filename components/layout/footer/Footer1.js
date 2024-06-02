@@ -5,6 +5,25 @@ export default function Footer1() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+      // let's make a function that receive the specific element_id as string and scroll into that element_id
+      const scrolltoHash = function (element_id) {
+    
+        const element = document.getElementById(element_id)
+    
+        const scrollTop = element.offsetTop
+        
+        if(window)
+        {
+            window.scrollTo({
+                top: scrollTop-150,
+                behavior: 'smooth',
+            })
+        }
+    
+        return false;
+    
+      }
+
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
@@ -39,7 +58,7 @@ export default function Footer1() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="footer__main">
+              {/* <div className="footer__main">
                 <div className="block-text center">
                   <h3 className="heading">Get Newsletter</h3>
                   <p>Get updated with our news, updates, and achievements.</p>
@@ -59,7 +78,7 @@ export default function Footer1() {
                     <span>Subscribe</span>
                   </button>
                 </form>
-              </div>
+              </div> */}
               <div className="footer__bottom">
                 <a href="/" className="logo">
                   <img
@@ -71,26 +90,16 @@ export default function Footer1() {
                 <div className="center mb--30">
                   <ul className="list">
                     <li>
-                      <a onClick={(e) => scrolltoHash("about-section")}>
-                        About
+                      <a onClick={(e) => scrolltoHash("work-environments-section")}>
+                      Workspaces
                       </a>
                     </li>
                     <li>
-                      <a onClick={(e) => scrolltoHash("features-section")}>
-                        Features
-                      </a>
+                      <a onClick={(e) => scrolltoHash("about-section")}>About</a>
                     </li>
                     <li>
-                      <a onClick={(e) => scrolltoHash("roadmap-section")}>
-                        Roadmap
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={(e) => scrolltoHash("team-section")}>Team</a>
-                    </li>
-                    <li>
-                      <a onClick={(e) => scrolltoHash("contact-section")}>
-                        Contact
+                      <a onClick={(e) => scrolltoHash("how-it-works")}>
+                      How it works
                       </a>
                     </li>
                   </ul>

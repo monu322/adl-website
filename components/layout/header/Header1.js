@@ -10,8 +10,6 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big })
     const scrolltoHash = function (element_id) {
         
         const element = document.getElementById(element_id)
-        console.log(element)
-        console.log(element.offsetTop)
 
         const scrollTop = element.offsetTop
         
@@ -70,13 +68,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big })
                                                 <a onClick={(e) => scrolltoHash('about-section')}>About</a>
                                             </li>
                                             <li className="menu-item">
+                                                <a onClick={(e) => scrolltoHash('work-environments-section')}>Workspaces</a>
+                                            </li>
+                                            <li className="menu-item">
                                                 <a onClick={(e) => scrolltoHash('features-section')}>Features</a>
                                             </li>
                                             <li className="menu-item">
-                                                <a onClick={(e) => scrolltoHash('roadmap-section')}>RoadMap</a>
-                                            </li>
-                                            <li className="menu-item">
-                                                <a onClick={(e) => scrolltoHash('team-section')}>Team</a>
+                                                <a onClick={(e) => scrolltoHash('how-it-works')}>How it works</a>
                                             </li>
                                         </ul>
                                     </nav>
