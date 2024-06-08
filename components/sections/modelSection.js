@@ -1,5 +1,4 @@
-import Link from "next/link"
-import ModelViewerSection from "../3d_model/model_section"
+import ModelViewer from "../3d_model/3d_image"
 
 export default function ModalSection() {
 
@@ -7,7 +6,7 @@ export default function ModalSection() {
     return (
         <>
             <section className="about" id="about-section">
-               <ModelViewerSection/>
+               <ModelViewer/>
                {/* <h1>Helooooo</h1> */}
             </section>
         </>
