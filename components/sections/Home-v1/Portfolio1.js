@@ -19,6 +19,19 @@ export default function Portfolio1() {
                 </h3>
               </div>
             </div>
+            <div className="col-md-7">
+              <div
+                className="portfolio__right"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                <ModelViewer />
+              </div>
+            </div>
             <div className="col-md-5">
               <div className="portfolio__left">
                 <div className="portfolio-box">
@@ -411,19 +424,7 @@ export default function Portfolio1() {
                 </div>
               </div>
             </div>
-            <div className="col-md-7">
-              <div
-                className="portfolio__right"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "100%",
-                }}
-              >
-                <ModelViewer />
-              </div>
-            </div>
+    
           </div>
         </div>
       </section>
