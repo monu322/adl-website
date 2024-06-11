@@ -14,7 +14,7 @@ function FinalModel2() {
 }
 
 function KitchenModal2() {
-  const { scene } = useGLTF("/assets/model/restaurant.glb");
+  const { scene } = useGLTF("/assets/model/restaurant3.glb");
   scene.scale.set(1, 1, 1);
   scene.position.set(0, -1, -6);
   scene.rotation.set(0, -0.5, 0);
@@ -78,5 +78,5 @@ export default function ModelViewer2() {
 }
 
 useGLTF.preload("/assets/model/Final.glb");
-useGLTF.preload("/assets/model/restaurant.glb");
+useGLTF.preload("/assets/model/restaurant3.glb");
 
