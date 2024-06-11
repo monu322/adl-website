@@ -7,8 +7,8 @@ function FinalModel2() {
   const { scene } = useGLTF("/assets/model/Final.glb");
 
   scene.scale.set(1, 1, 1);
-  scene.position.set(-1, -1, 0);
-  scene.rotation.set(0, 1, 0);
+  scene.position.set(-0.9, -1, 0.1);
+  scene.rotation.set(0, 1.5, 0);
 
   return <primitive object={scene} />;
 }

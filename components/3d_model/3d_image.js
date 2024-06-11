@@ -40,7 +40,7 @@ export default function ModelViewer() {
               <directionalLight position={[10, 10, 5]} intensity={1} castShadow />
               <directionalLight position={[-10, 10, 5]} intensity={0.5} castShadow />
               <perspectiveCamera makeDefault position={[3, 3, 5]} />
-              <KitchenModal /> {/* Render background modal */}
+              {/* <KitchenModal /> Render background modal */}
               <FinalModel /> {/* Render Final.glb model */}
               {/* FinalModel OrbitControls */}
               <OrbitControls 

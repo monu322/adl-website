@@ -81,7 +81,8 @@ const Categories = () => {
           className="category-section"
           style={{ backgroundImage: `url(${item.img})` }}
         >
-          <div className="category-content col-md-6">
+      <div  className={`category-content ${index % 2 === 0 ? 'gradient-right' : 'gradient-left'}`}>
+      <div className="category-text col-md-8">
             <h2 className="category-title">{item.category}</h2>
             <div className="operations-list">
               {item.operations.map((operation, opIndex) => (
@@ -92,6 +93,7 @@ const Categories = () => {
               ))}
             </div>
           </div>
+      </div>
         </div>
       ))}
     </div>

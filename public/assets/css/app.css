@@ -2086,61 +2086,6 @@ a {
   }
 }
 
-.categories-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.category-section {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 103vh; /* Adjust as needed */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white; /* Adjust text color as needed */
-  text-align: justify;
-  padding: 20px;
-  margin-bottom: 20px; /* Space between sections */
-}
-
-.category-content {
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Optional: to make text more readable on various backgrounds */
-  padding: 20px;
-  border-radius: 5px;
-  width: 80%;
-  align-items: center;
-  justify-content: center;
-}
-
-.category-title {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.operations-list {
-  text-align: left; /* Align operations list to the left */
-}
-
-.operation-item {
-  margin-bottom: 15px;
-}
-
-.operation-title {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.operation-details {
-  font-size: 16px;
-}
-
 /* new category */
 
 .categories-container {
@@ -2152,6 +2097,7 @@ a {
   position: relative;
   background-size: cover;
   background-position: center;
+
   height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
@@ -2167,32 +2113,60 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Make the overlay cover the whole section */
   display: flex;
+  text-align: left;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   padding: 20px;
   padding-left: 20%;
+  padding-right: 20%;
   width: 100%;
   font-size: 10rem;
+  /* background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.66) 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 0%
+  ); */
+
+  
+}
+
+.gradient-right {
+
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.6082808123249299) 48%, rgba(0,0,0,0) 60%);
+  align-items: flex-start;
+
+}
+
+.gradient-left {
+
+  background: rgb(0,0,0);
+background: linear-gradient(270deg, rgba(0,0,0,0.6082808123249299) 48%, rgba(0,0,0,0) 60%);
+align-items: flex-end;
+margin-left: 10%;
+
+
 }
 
 .category-title {
   margin-bottom: 20px;
-  font-size: 4rem; /* Increase font size */
+  font-size: 4rem; 
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1150px) {
-  /* Your styles for screens 1150px wide or less go here */
+/* @media only screen and (max-width: 1150px) {
+
 
   .category-title {
     margin-bottom: 20px;
-    font-size: 2rem; /* Increase font size */
+    font-size: 2rem;
     font-weight: bold;
   }
-}
+} */
+
+
 
 .operations-list {
   text-align: left; /* Align operations list to the left */
@@ -2203,13 +2177,50 @@ a {
 }
 
 .operation-title {
-  font-size: 2rem; /* Increase font size */
+  font-size: 1.8rem; 
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 .operation-details {
-  font-size: 1rem; /* Increase font size */
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 767px) {
+ 
+
+  .category-content {
+    width: 100%;
+    text-align: left;
+
+  }
+  .category-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .operation-title {
+    font-size: 1.2rem; 
+  }
+
+  .operation-details {
+    font-size: 1.2rem; 
+  }
+
+  .gradient-right {
+
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 44%, rgba(0,0,0,0.6082808123249299) 70%);
+  
+  }
+  
+  .gradient-left {
+  
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 44%, rgba(0,0,0,0.6082808123249299) 70%);
+    margin-left: 0%;
+  }
 }
 
 .card-box {

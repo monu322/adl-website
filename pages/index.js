@@ -22,7 +22,7 @@ export default function Home() {
                 <About4 />
                 
                 <Portfolio3/>
-                <ModalSection2/>
+                {/* <ModalSection2/> */}
                 <Speciality1 />
                 <Portfolio1 />
                 {/* <Portfolio2 /> */}
