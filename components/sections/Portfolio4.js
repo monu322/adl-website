@@ -84,7 +84,7 @@ const Categories = () => {
       <div  className={`category-content ${index % 2 === 0 ? 'gradient-right' : 'gradient-left'}`}>
       <div className="category-text col-md-8">
             <h2 className="category-title">{item.category}</h2>
-            <div className="operations-list">
+            <div className={`operations-list ${index % 2 === 0 ? '' : 'text-sm-start text-md-end'}`}>
               {item.operations.map((operation, opIndex) => (
                 <div key={opIndex} className="operation-item">
                   <h3 className="operation-title">{operation.title}</h3>
