@@ -1,74 +1,66 @@
+
+
 import React, { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { useGLTF, OrbitControls, useTexture } from "@react-three/drei";
-import * as THREE from "three";
+import { useGLTF, OrbitControls } from "@react-three/drei";
 
 function FinalModel2() {
   const { scene } = useGLTF("/assets/model/Final.glb");
 
-  scene.scale.set(1, 1, 1);
-  scene.position.set(-0.9, -1, 0.1);
-  scene.rotation.set(0, 1.5, 0);
+  scene.scale.set(15.5, 15.5, 15.5);
+  scene.position.set(2, -26.5, 17);
+  scene.rotation.set(0, 2.4, 0);
 
   return <primitive object={scene} />;
 }
 
 function KitchenModal2() {
-  const { scene } = useGLTF("/assets/model/restaurant3.glb");
-  scene.scale.set(1, 1, 1);
-  scene.position.set(0, -1, -6);
-  scene.rotation.set(0, -0.5, 0);
+  const { scene } = useGLTF("/assets/model/cafe.glb");
+  scene.scale.set(10, 15, 45);
+  scene.position.set(1, 1, -5);
+  scene.rotation.set(0, -5.5, 0);
   return <primitive object={scene} />;
 }
 
-function Background() {
-  const texture = useTexture("/assets/model/sky.jpg");
-
-
-  return (
-    <mesh>
-      <sphereGeometry args={[500, 60, 40]} />
-      <meshBasicMaterial map={texture} side={THREE.BackSide} />
-    </mesh>
-  );
-}
-
 export default function ModelViewer2() {
-  const finalControls = useRef();
-  const kitchenControls = useRef();
+  const controls = useRef();
 
   return (
     <div className="categories-container">
       <div className="row">
         <div className="col-12" style={{ height: "800px" }}>
-        <Canvas>
+          <Canvas
+          pixelRatio={window.devicePixelRatio}
+            camera={{
+              
+              position: [40, 0, 30], // Set the initial position of the camera
+              fov: 75,
+              aspect: window.innerWidth / window.innerHeight,
+              near: 0.1,
+              far: 500,
+            }}
+          >
             <Suspense fallback={null}>
-              <ambientLight  intensity={1} />
-              <directionalLight intensity={8}  />
+              <ambientLight intensity={1} />
+              <directionalLight intensity={4} />
               <pointLight position={[0, 5, 0]} intensity={2.0} color="#FFD700" />
               <pointLight position={[-1, -1, 0]} intensity={1.5} color="#ffffff" />
-              <spotLight  position={[-1, -1, 0]} intensity={4}/>
+              <spotLight position={[-1, -1, 0]} intensity={4} />
 
-              <perspectiveCamera makeDefault position={[0, 0, 10]} />
               <KitchenModal2 />
               <FinalModel2 />
               <OrbitControls
-                ref={finalControls}
+                ref={controls}
+                autoRotate
                 enableZoom={true}
                 enablePan={true}
                 enableRotate={true}
-              />
-              <OrbitControls
-                ref={kitchenControls}
-                enableZoom={true}
-                enablePan={true}
-                enableRotate={true}
-                minDistance={2}
-                maxDistance={2}
+                minDistance={30}
+                maxDistance={50}
                 maxPolarAngle={Math.PI / 1.6}
-                minPolarAngle={Math.PI / 3.5} 
+               minPolarAngle={Math.PI / 2.5} 
               />
-              <Background />
+         
             </Suspense>
           </Canvas>
         </div>
@@ -78,5 +70,10 @@ export default function ModelViewer2() {
 }
 
 useGLTF.preload("/assets/model/Final.glb");
-useGLTF.preload("/assets/model/restaurant3.glb");
+useGLTF.preload("/assets/model/cafe.glb");
+
+
+
+
+
 
