@@ -12,6 +12,7 @@ import Testimonials4 from "@/components/sections/Home-v1/Testimonials4"
 import How from "@/components/sections/Home-v1/How"
 import Blog4 from "@/components/sections/Home-v1/Blog4"
 import Faq4 from "@/components/sections/Home-v1/Faq4"
+import ModalSection2 from "@/components/sections/ModalSection2"
 export default function Home() {
 
     return (
@@ -21,6 +22,7 @@ export default function Home() {
                 <About4 />
                 
                 <Portfolio3/>
+                {/* <ModalSection2/> */}
                 <Speciality1 />
                 <Portfolio1 />
                 {/* <Portfolio2 /> */}
