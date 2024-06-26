@@ -44,8 +44,8 @@ export default function About1() {
                         <div className="col-xl-6 col-md-12">
                             <div className="block-text">
                                 <h6 className="sub-heading"><span>About us</span></h6>
-                                <h3 className="heading wow" data-splitting>Building the
-                                    Robot of the future</h3>
+                                <h3 className="heading wow" data-splitting>A truly
+                                    General-purpose robot</h3>
                                 <p className="mb-17">We are a team with a mission, to build the world's first Robot butler. A fully autonomous and highly dextrous 
                                 mobile robot for the domestic space. The ChatGPT for your home.</p>
                                 <p className="mb-26">A normal human being spends around 30% of their time in mundane household chores like cooking and cleaning. 

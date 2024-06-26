@@ -42,8 +42,7 @@ export default function About1() {
                         <div className="col-xl-6 col-md-12">
                             <div className="block-text">
                                 <h6 className="sub-heading"><span>About us</span></h6>
-                                <h3 className="heading wow" data-splitting>Building the
-                                    Robot of the future</h3>
+                                <h3 className="heading wow" data-splitting>A truly<br/>general-purpose robot</h3>
                                 <p className="mb-17">At ADL Robotics, we are building the workforce of the future.</p>
                                 <p className="mb-17">Our mission is to transform the future of work by providing advanced general-purpose robots designed to assist with Activities of Daily Living (ADL).</p>
                                 <p className="mb-26">Our cutting-edge technology aims to enhance independence, increase productivity, and improve the overall efficiency for enterprices worldwide.</p>
