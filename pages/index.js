@@ -13,6 +13,7 @@ import How from "@/components/sections/Home-v1/How"
 import Blog4 from "@/components/sections/Home-v1/Blog4"
 import Faq4 from "@/components/sections/Home-v1/Faq4"
 import ModalSection2 from "@/components/sections/ModalSection2"
+import VideoPlayerSection from "@/components/sections/VideoPlayer"
 export default function Home() {
 
     return (
@@ -20,8 +21,8 @@ export default function Home() {
             <Layout headerStyle={1} footerStyle={1} big>
                 <Banner4 />
                 <About4 />
-                
                 <Portfolio3/>
+                <VideoPlayerSection/>
                 {/* <ModalSection2/> */}
                 <Speciality1 />
                 <Portfolio1 />
