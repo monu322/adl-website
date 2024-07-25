@@ -30,7 +30,7 @@ export default function Create1() {
                         <div className="col-12">
                             <div className="create__main">
                                 <div className="content">
-                                    <h4 className="heading">Become a partner</h4>
+                                    <h4 className="heading">Become an Early Adopter</h4>
                                     <p className="contact-para">Get in touch to beacome an early adopter of our breakthrough technology and pave the way for the workforce of the future.</p>
                                     <a onClick={(e) => scrolltoHash('contact-section')} className="action-btn"><span>Get in touch</span></a>
                                 </div>
