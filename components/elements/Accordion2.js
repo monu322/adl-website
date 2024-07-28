@@ -40,7 +40,7 @@ export default function Accordion2({oneCol}) {
  <span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                                         <p>
-                                        Our robots are designed to assist with a variety of tasks including customer service, order delivery, inventory management, cleaning, and more.
+                                        Our robots are designed to assist with a variety of tasks including food preparation, cooking, plating & garnishing, cleaning, and more.
                                         </p>
                                     </div>
                                 </div>
@@ -53,10 +53,10 @@ export default function Accordion2({oneCol}) {
                                     </div>
                                 </div>
                                 <div className={isActive.key == 3 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(3)}>
-                                    <h6 className={isActive.key == 3 ? "toggle-title active" : "toggle-title"}><span>03.</span> Are your robots customizable to fit our specific needs and brand?<span className="icon-plus" /></h6>
+                                    <h6 className={isActive.key == 3 ? "toggle-title active" : "toggle-title"}><span>03.</span> Are your robots customizable to fit our specific needs and environments?<span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                                         <p>
-                                        Yes, our robots can be customized with specific features, functions, and branding elements to align with your business requirements and corporate identity.
+                                        Yes, our robots can be customized and trained with specific features, functions, and work environments to align with your business requirements.
                                         </p>
                                     </div>
                                 </div>
@@ -69,10 +69,10 @@ export default function Accordion2({oneCol}) {
                                     </div>
                                 </div>
                                 <div className={isActive.key == 5 ? "flat-toggle active" : "flat-toggle"} onClick={() => handleToggle(5)}>
-                                    <h6 className={isActive.key == 5 ? "toggle-title active" : "toggle-title"}><span>05.</span> How do your robots integrate with our existing systems and technologies?<span className="icon-plus" /></h6>
+                                    <h6 className={isActive.key == 5 ? "toggle-title active" : "toggle-title"}><span>05.</span> How do your robots integrate with our existing workplaces and employees?<span className="icon-plus" /></h6>
                                     <div className="toggle-content" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
                                         <p>
-                                        Our robots are equipped with advanced APIs and are designed to seamlessly integrate with your current point-of-sale systems, inventory management software, and other digital infrastructures.
+                                        Our robots are equipped with advanced sensors and learning algorithms that are designed to learn and integrate with your current workplaces and employees and other infrastructures.
                                         </p>
                                     </div>
                                 </div>

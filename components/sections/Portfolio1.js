@@ -417,8 +417,7 @@ export default function Portfolio1() {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
-                  height: "100%",
+                  alignItems: "center"
                 }}
               >
                 <ModelViewer />
