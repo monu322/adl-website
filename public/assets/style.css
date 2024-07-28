@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?2gatwr');
-  src:  url('fonts/icomoon.eot?2gatwr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2gatwr') format('truetype'),
-    url('fonts/icomoon.woff?2gatwr') format('woff'),
-    url('fonts/icomoon.svg?2gatwr#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?2gatwr");
+  src: url("fonts/icomoon.eot?2gatwr#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?2gatwr") format("truetype"),
+    url("fonts/icomoon.woff?2gatwr") format("woff"),
+    url("fonts/icomoon.svg?2gatwr#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -325,6 +326,12 @@
   content: "\e900";
   color: #fff;
 }
+
+.icon-minus:before {
+  content: "\e92d";
+  color: #fff;
+}
+
 .icon-logo-01:before {
   content: "\e909";
   color: #fff;
@@ -366,5 +373,3 @@
   content: "\e908";
   color: #fff;
 }
-
-

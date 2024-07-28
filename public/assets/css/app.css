@@ -2128,33 +2128,34 @@ a {
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 0%
   ); */
-
-  
 }
 
 .gradient-right {
-
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,0.6082808123249299) 48%, rgba(0,0,0,0) 60%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6082808123249299) 48%,
+    rgba(0, 0, 0, 0) 60%
+  );
   align-items: flex-start;
   text-align: left;
-
 }
 
 .gradient-left {
-
-  background: rgb(0,0,0);
-background: linear-gradient(270deg, rgba(0,0,0,0.6082808123249299) 48%, rgba(0,0,0,0) 60%);
-align-items: flex-end;
-text-align: right;
-margin-left: 10%;
-
-
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.6082808123249299) 48%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  align-items: flex-end;
+  text-align: right;
+  margin-left: 10%;
 }
 
 .category-title {
   margin-bottom: 20px;
-  font-size: 4rem; 
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -2168,8 +2169,6 @@ margin-left: 10%;
   }
 } */
 
-
-
 .operations-list {
   text-align: left; /* Align operations list to the left */
 }
@@ -2179,7 +2178,7 @@ margin-left: 10%;
 }
 
 .operation-title {
-  font-size: 1.8rem; 
+  font-size: 1.8rem;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -2189,12 +2188,9 @@ margin-left: 10%;
 }
 
 @media only screen and (max-width: 767px) {
- 
-
   .category-content {
     width: 100%;
     text-align: left;
-
   }
   .category-title {
     margin-bottom: 20px;
@@ -2203,24 +2199,29 @@ margin-left: 10%;
   }
 
   .operation-title {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
   .operation-details {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
   .gradient-right {
-
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0) 44%, rgba(0,0,0,0.6082808123249299) 70%);
-  
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 44%,
+      rgba(0, 0, 0, 0.6082808123249299) 70%
+    );
   }
-  
+
   .gradient-left {
-  
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0) 44%, rgba(0,0,0,0.6082808123249299) 70%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 44%,
+      rgba(0, 0, 0, 0.6082808123249299) 70%
+    );
     margin-left: 0%;
   }
 }
@@ -5468,6 +5469,7 @@ img.mfp-img {
 .touch__main .info .list li p {
   font-weight: 300;
   font-size: 16px;
+  display: block;
 }
 
 .touch__main .info .image {
@@ -7364,4 +7366,9 @@ section.banner.s3.s2 .container .swiper-button-prev {
 
 .work-environments-section {
   margin-top: 50px;
+}
+
+.faq-img img {
+  width: 100%;
+  margin-top: 150px;
 }

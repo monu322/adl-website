@@ -18,8 +18,8 @@ export default function Faq4() {
                             <Accordion2 oneCol/>
                         </div>
                         <div className="col-xl-6 col-md-12">
-                            <div className="image" data-aos="fade-left" data-aos-duration={2000}>
-                                <img src="/assets/images/enviorments/adl-full.JPG" alt="" />
+                            <div className="image faq-img" data-aos="fade-left" data-aos-duration={2000}>
+                                <img src="/assets/images/enviorments/bg1-mob.jpg" alt="" />
                             </div>
                         </div>
                     </div>
