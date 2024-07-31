@@ -7372,3 +7372,7 @@ section.banner.s3.s2 .container .swiper-button-prev {
   width: 100%;
   margin-top: 150px;
 }
+
+.wrapper.has-padding {
+  padding-top: 80px;
+}

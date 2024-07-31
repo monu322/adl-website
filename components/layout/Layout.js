@@ -30,7 +30,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
         <>
             <PageHead headTitle={headTitle} />
 
-            <div className="wrapper">
+            <div className={`wrapper ${scroll ? "has-padding" : ""}`}>
                 <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} big={big} />
 
 
