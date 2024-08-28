@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Categories from "../Portfolio4";
+import Categories2 from "../Portfolio5";
 
 export default function Portfolio3() {
   return (
@@ -14,7 +15,7 @@ export default function Portfolio3() {
                 </h3>
               </div>
     </div>
-    <Categories />
+    <Categories2 />
       {/* <section className="banner4 mb-50">
         <img
           src="/assets/images/enviorments/full-2.jpg"

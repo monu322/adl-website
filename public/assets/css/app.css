@@ -2153,6 +2153,37 @@ a {
   margin-left: 10%;
 }
 
+.gradient-right {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 48%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  padding: 20px;
+}
+
+.gradient-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.text-container {
+  position: relative;
+  z-index: 2;
+  padding-left: 100px; /* Adjust this value for more or less padding */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text stand out */
+}
+
+.text-container-full {
+  padding-left: 15%;
+}
+
+.overlay-video-player-container {
+  z-index: 3; /* Ensure the video player is on top of everything else */
+  position: relative; /* Ensure proper stacking with z-index */
+}
+
+
 .category-title {
   margin-bottom: 20px;
   font-size: 4rem;
@@ -2196,6 +2227,10 @@ a {
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  .text-container-full {
+    padding-left: 0;
   }
 
   .operation-title {

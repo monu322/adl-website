@@ -11,6 +11,9 @@
         "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.6.0",
+        "@fortawesome/free-solid-svg-icons": "^6.6.0",
+        "@fortawesome/react-fontawesome": "^0.2.2",
         "@mailchimp/mailchimp_marketing": "^3.0.80",
         "@react-three/drei": "^9.105.6",
         "@react-three/fiber": "^8.16.6",
@@ -24,7 +27,7 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-hook-form": "^7.50.1",
-        "react-modal-video": "^1.2.10",
+        "react-modal-video": "^2.0.2",
         "sass": "^1.62.1",
         "swiper": "^10.1.0",
         "three": "^0.162.0",
