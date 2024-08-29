@@ -14,6 +14,7 @@ import Blog4 from "@/components/sections/Home-v1/Blog4"
 import Faq4 from "@/components/sections/Home-v1/Faq4"
 import ModalSection2 from "@/components/sections/ModalSection2"
 import VideoPlayerSection from "@/components/sections/VideoPlayer"
+import OverlayVideoPlayer from "@/components/sections/VideoPlayerOverlay"
 export default function Home() {
 
     return (
@@ -22,7 +23,8 @@ export default function Home() {
                 <Banner4 />
                 <About4 />
                 <Portfolio3/>
-                <VideoPlayerSection/>
+                {/* <VideoPlayerSection/> */}
+               
                 {/* <ModalSection2/> */}
                 <Speciality1 />
                 <Portfolio1 />
