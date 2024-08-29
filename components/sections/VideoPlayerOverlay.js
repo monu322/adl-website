@@ -1,35 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlayCircle, faClose } from '@fortawesome/free-solid-svg-icons';
 
 const OverlayVideoPlayer = ({ videoUrl, isOverlayOpen, handleCloseOverlay }) => {
   const handleOverlayClick = (e) => {
-    if (e.target.classList.contains('overlay-background')) {
-      handleCloseOverlay();
-    }
+    console.log("Overlay out");
+    handleCloseOverlay();
+    // if (e.target.classList.contains('overlay-background')) {
+    //   console.log("Overlay");
+    //   handleCloseOverlay();
+    // }
   };
 
   return (
-    <div className="text-center">
-    
-
+    <div className="overlay-background" onClick={handleOverlayClick}>
       {isOverlayOpen && (
         <div
-          className="overlay-background position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-          style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', zIndex: 1050 }}
-          onClick={handleOverlayClick}
+          className="text-center d-flex align-items-center justify-content-center"
+          style={{
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            
+          }}
         >
           <div
-            className="bg-black rounded shadow-md"
-            style={{ maxWidth: '80%', maxHeight: '80%', position: 'relative' }}
+            className="bg-black rounded shadow-md position-relative"
+            style={{ maxWidth: '80%', maxHeight: '80%' }}
           >
-            <button className="btn-close position-absolute top-0 end-0 m-2" onClick={handleCloseOverlay}></button>
+            <FontAwesomeIcon
+              icon={faClose}
+              style={{
+                cursor: 'pointer',
+              }}
+              onClick={handleOverlayClick}
+              className="btn-close position-absolute top-0 end-0 m-3 pointer"
+              aria-label="Close"
+            ></FontAwesomeIcon>
             <video
               src={videoUrl}
               controls
               autoPlay
-              className="img-fluid rounded"
-              style={{ width: '100%', height: 'auto' }}
+              className="img-fluid rounded "
+              style={{ width: '80%', height: '80%' }}
             ></video>
           </div>
         </div>

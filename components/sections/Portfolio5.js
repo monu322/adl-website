@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import OverlayVideoPlayer from './VideoPlayerOverlay';
 
+
 const data = [
   {
     category: 'Restaurants',
@@ -31,6 +32,7 @@ const data = [
     ],
   },
 ];
+
 
 const Categories2 = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
@@ -83,19 +85,21 @@ const Categories2 = () => {
             </div>
           </div>
 
-          {/* Video Icon on the Right Side */}
           <div className="col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center pe-5">
-            <a
+            <FontAwesomeIcon
+              icon={faPlayCircle}
               onClick={() => handleOpenOverlay(item.videoUrl)}
-              className="action-btn"
-              style={{ cursor: 'pointer' }}
-            >
-              <FontAwesomeIcon
-                icon={faPlayCircle}
-                size="5x" // Set icon size to 4x
-                style={{ color: 'white', fontSize:"250px", textShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)' }}
-              />
-            </a>
+              size="5x"
+              style={{
+                cursor: 'pointer',
+                color: 'white',
+                fontSize: '250px',
+                textShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+                zIndex: 1,
+                transition: 'transform 0.3s ease',
+              }}
+              className="video-icon"
+            />
           </div>
         </div>
       ))}
@@ -112,4 +116,3 @@ const Categories2 = () => {
 };
 
 export default Categories2;
-
