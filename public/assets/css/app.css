@@ -2178,13 +2178,12 @@ a {
   padding-left: 15%;
 }
 
-
 .overlay-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   z-index: 9999999;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -2193,7 +2192,7 @@ a {
 }
 
 .video-icon:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .btn-close {
@@ -2202,11 +2201,9 @@ a {
 }
 
 .btn-close:hover {
-  color: #ccc; 
+  color: #ccc;
   opacity: 1;
 }
-
-
 
 .category-title {
   margin-bottom: 20px;
@@ -7354,6 +7351,10 @@ section.banner.s3.s2 .container .swiper-button-prev {
   .contact-para {
     padding-right: 390px;
   }
+}
+
+.section-title {
+  font-size: 20px;
 }
 
 .roadmap-desc-p {

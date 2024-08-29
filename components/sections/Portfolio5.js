@@ -23,7 +23,7 @@ const data = [
   {
     category: 'Retail Stores',
     img: '/assets/images/enviorments/robot-in-retail.png',
-    videoUrl: 'https://adlrobotics.com/adl-dutibot-demo.mp4',
+    videoUrl: 'https://adlrobotics.com/adl-retail-demo.mp4',
     operations: [
       {
         title: 'Free Up Your Staff for Customer Interaction',
@@ -69,8 +69,8 @@ const Categories2 = () => {
             <div>
               {item.operations.map((operation, opIndex) => (
                 <div key={opIndex} className="mb-3">
-                  <h3 className="h4 fw-bold">{operation.title}</h3>
-                  <p className="lead">{operation.details}</p>
+                  <h3 className="h4 fw-bold section-title">{operation.title}</h3>
+                  <p>{operation.details}</p>
                 </div>
               ))}
               <a
@@ -93,9 +93,10 @@ const Categories2 = () => {
               style={{
                 cursor: 'pointer',
                 color: 'white',
-                fontSize: '250px',
+                fontSize: '150px',
                 textShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
                 zIndex: 1,
+                opacity:0.8,
                 transition: 'transform 0.3s ease',
               }}
               className="video-icon"

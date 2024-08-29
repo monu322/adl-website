@@ -23,7 +23,7 @@ const OverlayVideoPlayer = ({ videoUrl, isOverlayOpen, handleCloseOverlay }) => 
           }}
         >
           <div
-            className="bg-black rounded shadow-md position-relative"
+            className="rounded shadow-md position-relative"
             style={{ maxWidth: '80%', maxHeight: '80%' }}
           >
             <FontAwesomeIcon
