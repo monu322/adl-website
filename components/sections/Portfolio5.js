@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import OverlayVideoPlayer from './VideoPlayerOverlay';
 
-
 const data = [
   {
     category: 'Restaurants',
@@ -31,8 +30,24 @@ const data = [
       },
     ],
   },
+  {
+    category: 'Homes',
+    img: '/assets/images/background/banner-video-bg.png',
+    videoUrl: 'https://adlrobotics.com/adl-demo-video.mp4',
+    operations: [
+      {
+        title: 'Household Cleaning and Chores',
+        details:
+          'Our robots take care of daily household chores like vacuuming, dusting, mopping, folding clothes, and cleaning utensils, ensuring a clean and organized home environment.',
+      },
+      {
+        title: 'Assistance in Cooking',
+        details:
+          'From basic meal prep to complex cooking tasks, our robots help with chopping, stirring, and monitoring cooking times, making meal preparation easier and more efficient.',
+      },
+    ],
+  },
 ];
-
 
 const Categories2 = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);

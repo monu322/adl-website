@@ -40,7 +40,7 @@ export default function Banner1() {
                                     {/* <h2 className="heading">World's First<br />
                                         Robot <span className="s1 arlo_tm_animation_text_word" />
                                         Butler</h2> */}
-                                        <h2 className="heading">Building the workforce of the future</h2>
+                                        <h2 className="heading">Transforming the future of work</h2>
                                     <p className="desc">A general purpose robot to Enhance your workforce, Boost efficiency, and Improve quality of life. </p>
                                     <a onClick={(e) => scrolltoHash('about-section')} className="action-btn"><span>Learn More</span></a>
                                 </div>
