@@ -81,7 +81,44 @@ export default function SurveyForm() {
     }
   };
 
+  // const handleSubmit = async () => {
+  //   setLoading(true);
+  //   try {
+  //     const response = await fetch("/api/survey-api", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         name,
+  //         company,
+  //         answers,
+  //       }),
+  //     });
+  //     const result = await response.json();
+  //     if (response.ok) {
+  //       setSuccessMessage(result.message);
+
+  //       setCurrentQuestionIndex(-2);
+  //       setAnswers({});
+  //     } else {
+  //       setErrorMessage("Failed to send survey. Try again later.");
+  //     }
+  //   } catch (error) {
+  //     setErrorMessage("An error occurred. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //     setErrorMessage("");
+  //   }
+  // };
+
   const handleSubmit = async () => {
+    // Check if the last question has an answer selected
+    if (!answers[currentQuestionIndex]) {
+      setSelectionError(true);
+      return;  // Exit the function if no answer is selected
+    }
+  
     setLoading(true);
     try {
       const response = await fetch("/api/survey-api", {
@@ -98,10 +135,8 @@ export default function SurveyForm() {
       const result = await response.json();
       if (response.ok) {
         setSuccessMessage(result.message);
-
-          setCurrentQuestionIndex(-2);
-          setAnswers({});
-
+        setCurrentQuestionIndex(-2);  // Navigate to the Thank You page
+        setAnswers({});
       } else {
         setErrorMessage("Failed to send survey. Try again later.");
       }
@@ -112,7 +147,7 @@ export default function SurveyForm() {
       setErrorMessage("");
     }
   };
-
+  
   const currentQuestion = surveyQuestions[currentQuestionIndex];
 
   return (
@@ -175,6 +210,17 @@ export default function SurveyForm() {
                           little extra help, I’d love to chat and show you how
                           our robot could make your life easier. Feel free to
                           schedule a quick chat
+                          <br />
+                          <br/>
+                          Or, check out a{" "}
+                          <a
+                            href="https://adlrobotics.com/adl-dutibot-demo.mp4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <h5 className="text-primary">Demo Video</h5>
+                          </a>{" "}
+                          of our robot in action!
                         </h5>
                         <button
                           type="button"

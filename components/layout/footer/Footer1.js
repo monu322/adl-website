@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
-export default function Footer1() {
+export default function Footer1({survey}) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const router = useRouter();
+  
       // let's make a function that receive the specific element_id as string and scroll into that element_id
       const scrolltoHash = function (element_id) {
+        
+        if(survey){
+          router.push('/')
+          return
+        }
     
         const element = document.getElementById(element_id)
     

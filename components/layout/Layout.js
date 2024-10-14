@@ -7,6 +7,7 @@ import Footer2 from './footer/Footer2';
 import Header1 from "./header/Header1";
 
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, big, survey }) {
+    
     const [scroll, setScroll] = useState(0);
     // Mobile Menu
     const [isMobileMenu, setMobileMenu] = useState(false);
@@ -45,8 +46,8 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
                 {children}
 
-                {!footerStyle && <Footer1 />}
-                {footerStyle === 1 && <Footer1 />}
+                {!footerStyle && <Footer1 survey={survey}/>}
+                {footerStyle === 1 && <Footer1 survey={survey}/>}
                 {footerStyle === 2 && <Footer2 />}
 
                 <BackToTop />
