@@ -81,37 +81,6 @@ export default function SurveyForm() {
     }
   };
 
-  // const handleSubmit = async () => {
-  //   setLoading(true);
-  //   try {
-  //     const response = await fetch("/api/survey-api", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         name,
-  //         company,
-  //         answers,
-  //       }),
-  //     });
-  //     const result = await response.json();
-  //     if (response.ok) {
-  //       setSuccessMessage(result.message);
-
-  //       setCurrentQuestionIndex(-2);
-  //       setAnswers({});
-  //     } else {
-  //       setErrorMessage("Failed to send survey. Try again later.");
-  //     }
-  //   } catch (error) {
-  //     setErrorMessage("An error occurred. Please try again.");
-  //   } finally {
-  //     setLoading(false);
-  //     setErrorMessage("");
-  //   }
-  // };
-
   const handleSubmit = async () => {
     // Check if the last question has an answer selected
     if (!answers[currentQuestionIndex]) {
@@ -129,7 +98,10 @@ export default function SurveyForm() {
         body: JSON.stringify({
           name,
           company,
-          answers,
+          answers: surveyQuestions.map((q, index) => ({
+            question: q.question,
+            answer: answers[index] || null,
+          }))
         }),
       });
       const result = await response.json();
@@ -206,7 +178,7 @@ export default function SurveyForm() {
                         <h5>
                           Thanks for taking the time!
                           <br />
-                          If your answers suggest that your team could use a
+                          Your answers suggest that your team could use a
                           little extra help, I’d love to chat and show you how
                           our robot could make your life easier. Feel free to
                           schedule a quick chat
