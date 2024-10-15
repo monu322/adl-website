@@ -5545,6 +5545,10 @@ img.mfp-img {
     width: 100%;
     padding: 60px 15px;
   }
+
+  .form-box {
+    margin-bottom: 50px;
+  }
 }
 
 .form-box {

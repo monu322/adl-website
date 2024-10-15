@@ -1,14 +1,17 @@
 import Link from "next/link"
 import { useState } from 'react'
+import { useRouter } from "next/router";
 import MobileMenu from "../MobileMenu"
 
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big }) {
+export default function Header1({ scroll, isMobileMenu, handleMobileMenu, big}) {
 
     const [showMobMenu, setShowMobMenu] = useState(false)
+
+    const router = useRouter()
     
     // let's make a function that receive the specific element_id as string and scroll into that element_id
     const scrolltoHash = function (element_id) {
-        
+
         const element = document.getElementById(element_id)
 
         const scrollTop = element.offsetTop
