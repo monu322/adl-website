@@ -222,7 +222,7 @@ export default function SurveyForm() {
                           className="mt-5"
                         >
                           <h5 className="mb-3">
-                            {currentQuestionIndex + 1 + ""}.{" "}
+                            {currentQuestionIndex + 1 + "/5"}.{" "}
                             {currentQuestion.question}
                           </h5>
                           {currentQuestion.options.map((option, index) => (
