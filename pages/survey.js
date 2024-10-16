@@ -183,16 +183,6 @@ export default function SurveyForm() {
                           our robot could make your life easier. Feel free to
                           schedule a intro call with our team.
                           <br />
-                          <br/>
-                          Or, check out a{" "}
-                          <a
-                            href="https://adlrobotics.com/adl-dutibot-demo.mp4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <h5 className="text-primary">Demo Video</h5>
-                          </a>{" "}
-                          of our robot in action!
                         </h5>
                         <button
                           type="button"
