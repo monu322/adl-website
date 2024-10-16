@@ -179,9 +179,9 @@ export default function SurveyForm() {
                           Thanks for taking the time!
                           <br />
                           Your answers suggest that your team could use a
-                          little extra help, I’d love to chat and show you how
+                          little extra help, We’d love to chat and show you how
                           our robot could make your life easier. Feel free to
-                          schedule a quick chat
+                          schedule a intro call with our team.
                           <br />
                           <br/>
                           Or, check out a{" "}
@@ -222,7 +222,7 @@ export default function SurveyForm() {
                           className="mt-5"
                         >
                           <h5 className="mb-3">
-                            {currentQuestionIndex + 1}.{" "}
+                            {currentQuestionIndex + 1 + ""}.{" "}
                             {currentQuestion.question}
                           </h5>
                           {currentQuestion.options.map((option, index) => (
